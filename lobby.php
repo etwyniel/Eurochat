@@ -56,7 +56,7 @@
             </script>
                 <input 
             id="send" 
-            size="100em" 
+            style="width: 92%" 
             type="text" 
             onsubmit="send" 
             onkeypress="if (event.keyCode==13 && document.getElementById('send').value != '') {send();}"
