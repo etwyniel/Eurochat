@@ -41,18 +41,6 @@
 			<br>
 			<h3> Welcome <?php echo $_SESSION['username'];?>!</h3><br>
 			<p class="wrap">Welcome to this website!<br>It doesn't really serve any purpose for now...</p>
-            <p id="test"></p>
-        <script>
-            function print_stuff() {
-                var node = document.createElement('p');
-                var br = document.createElement('br');
-                var text = document.createTextNode('STUFF!');
-                node.appendChild(text);
-                document.getElementById("main").appendChild(br);
-                document.getElementById("main").appendChild(text);
-            }
-        </script>
-        <button onclick="print_stuff()">STUFF</button>
 		</div>
 		<h6>&#169 Aymeric Beringer 2016 - All rights reserved</h6>
 	</body>
