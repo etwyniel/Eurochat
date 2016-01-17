@@ -2,7 +2,7 @@
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $mysqli = new mysqli('localhost', 'root', 'bdaea8ke', 'user_data');
+    $mysqli = new mysqli('sql4.freemysqlhosting.net', 'sql4103349', 'ugtSzWBZrY', 'sql4103349');
     $check_username = "SELECT * FROM credentials WHERE username = '$username'";
     $r = $mysqli->query($check_username);
     echo $r->num_rows;
