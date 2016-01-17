@@ -142,3 +142,19 @@ h6 {
 	position: relative;
 	bottom: 0em
 }
+
+#chat {
+    background-color: white;
+    height:  20em;
+    width: 100%;
+    border:  1px solid black;
+}
+
+#send {
+    margin-left: 0;
+    border: 1px solid black;
+}
+
+textarea {
+    resize: none
+}
