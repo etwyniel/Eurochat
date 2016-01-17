@@ -31,7 +31,7 @@
         $_SESSION['password'] = $password;
         $_SESSION['username'] = $username;
         $_SESSION['logged_in'] = TRUE;
-        header("Location: webpage.php?");
+        header("Location: index.php?");
         exit();
     }
 ?>

@@ -9,7 +9,7 @@
 		<title>Eurochat</title>
 	</head>
 	<body>
-		<div  id="header"><a href="webpage.php">
+		<div  id="header"><a href="index.php">
 			<h1>EuroChat</h1>
 			<h2>An efficient way of communicating between penfriends</h2>
 		</a></div>
@@ -19,7 +19,7 @@
      echo "<div id='log'><a href='register_page.php'>Register</a> <a href='login_page.php'>Log in</a></div>";
  }?>
 		<p id="links">
-			<a href="webpage.php">Home</a> | 
+			<a href="index.php">Home</a> | 
 			<a href="lobby1.html"> FRA - ENG </a> | 
 			<a href="lobby2.html"> FRA - DEU </a> | 
 			<a href="lobby3.html"> FRA - SPA </a> | 
