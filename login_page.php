@@ -54,7 +54,7 @@
                             break;
                      }
                  ?>
-                 Username:<input type="text" name="username">
+                 Username:<input type="text" name="username" autocomplete="off">
                  Password:<input type="password" name="password">
                 <input type="submit" value="Log in" onkeypress="enter">
              </form>

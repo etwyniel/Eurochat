@@ -60,7 +60,8 @@
             type="text" 
             onsubmit="send" 
             onkeypress="if (event.keyCode==13 && document.getElementById('send').value != '') {send();}"
-            autofocus="true">
+            autofocus="true"
+            autocomplete="off">
                 <input type="button" onclick="if (document.getElementById('send').value != '') {send();}" value="Send">
         </div>
 		<h6>&#169; Aymeric Beringer 2016 - All rights reserved</h6>
