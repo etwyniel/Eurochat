@@ -20,10 +20,10 @@
  }?>
 		<p id="links">
 			<a href="index.php">Home</a> | 
-			<a href="lobby1.html"> FRA - ENG </a> | 
-			<a href="lobby2.html"> FRA - DEU </a> | 
-			<a href="lobby3.html"> FRA - SPA </a> | 
-			<a href="lobby4.html"> FRA - USA </a> | 
+			<a href="lobby.php?lobby=1"> FRA - ENG </a> | 
+			<a href="lobby.php?lobby=2"> FRA - DEU </a> | 
+			<a href="lobby.php?lobby=3"> FRA - SPA </a> | 
+			<a href="lobby.php?lobby=4"> FRA - USA </a> | 
 			<a href="info.php"> Info</a>
 		</p>
 		<br>

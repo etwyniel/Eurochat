@@ -1,5 +1,8 @@
 <?php
     session_start();
+    if (!$_SESSION['logged_in']) {
+        header('Location: login_page.php');
+    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -39,10 +42,28 @@
 		</div>
 		<div id="main">
 			<br>
-			<h3> Welcome <?php echo $_SESSION['username'];?>!</h3><br>
+			<h3> Welcome to Lobby <?php echo $_GET['lobby'];?>!</h3><br>
 			<p class="wrap">Welcome to this website!<br>It doesn't really serve any purpose for now...</p>
-		</div>
-		<h6>&#169 Aymeric Beringer 2016 - All rights reserved</h6>
+		    <textarea rows="4" cols="50" readonly="true" id="chat" name="output"></textarea>
+            <script type="text/javascript">
+                var username = '<?php echo $_SESSION['username'];?>';
+
+                function send() {
+                    document.getElementById('chat').value += username + ": " + document.getElementById('send').value + "\n";
+                    var value = document.createTextNode(document.getElementById('send').value);
+                    document.getElementById('send').value = "";
+                }
+            </script>
+                <input 
+            id="send" 
+            size="100em" 
+            type="text" 
+            onsubmit="send" 
+            onkeypress="if (event.keyCode==13 && document.getElementById('send').value != '') {send();}"
+            autofocus="true">
+                <input type="button" onclick="if (document.getElementById('send').value != '') {send();}" value="Send">
+        </div>
+		<h6>&#169; Aymeric Beringer 2016 - All rights reserved</h6>
 	</body>
 	
 </html>
