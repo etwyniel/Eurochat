@@ -42,7 +42,7 @@
 			<h3> Welcome <?php echo $_SESSION['username'];?>!</h3><br>
 			<p class="wrap">Welcome to this website!<br>It doesn't really serve any purpose for now...</p>
 		</div>
-		<h6>&#169 Aymeric Beringer 2016 - All rights reserved</h6>
+		<footer>&#169 Aymeric Beringer 2016 - All rights reserved</footer>
 	</body>
 	
 </html>
