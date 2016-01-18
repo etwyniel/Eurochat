@@ -96,7 +96,7 @@
                  		}
                  	}
                  </script>
-                 <input type="button" value="Create account" onclick="check_length();">
+                 <input type="submit" value="Create account">
 </form>
             <?php else: ?>
             <h3>Account successfully created!</h3>
