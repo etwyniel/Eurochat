@@ -53,9 +53,54 @@
                  break;
                  case 'email_taken': echo "<p>This email is already in use.</p>";
                  }?>
-                 Username:<input type="text" name="username">
-                 Password:<input type="password" name="password">
-                 Email:<input type="email" name="email">
+                 <p id="error"></p>
+                 Username:<input type="text" name="username" id="username" required>
+                 Password:<input type="password" name="password" id="password" required>
+                 Email:<input type="email" name="email" id="email" required>
+                 <script>
+                 
+                 	function post(path, params, method) {
+    				method = method || "post"; // Set method to post by default if not specified.
+
+				 // The rest of this code assumes you are not using a library.
+				 // It can be made less wordy if you use one.
+				 var form = document.createElement("form");
+				 form.setAttribute("method", method);
+				 form.setAttribute("action", path);
+				
+				 for(var key in params) {
+				     if(params.hasOwnProperty(key)) {
+				         var hiddenField = document.createElement("input");
+				         hiddenField.setAttribute("type", "hidden");
+				         hiddenField.setAttribute("name", key);
+				         hiddenField.setAttribute("value", params[key]);
+				
+				         form.appendChild(hiddenField);
+				      }
+				 }
+
+    document.body.appendChild(form);
+    form.submit();
+}
+                 	function check_length() {
+                 		var username = document.getElementById('username').value;
+                 		var password = document.getElementById('password').value;
+                 		var email = document.getElementById('email').value;
+                 		var error = document.getElementById('error');
+                 	
+                 		if (username.length < 4) {
+                 			error.innerHTML = "This username is too short. Usernames must be between 4 and 16 characters.";
+                 		} elseif (username.length > 16) {
+                 			error.innerHTML = "This username is too long. Usernames must be between 4 and 16 characters.";
+                 		} elseif (password.length < 8) {
+                 			error.innerHTML = "This password is too short. Passwords must be between 8 and 20 characters.";
+                 		} elseif (password.length > 20) {
+                 			error.innerHTML = "This password is too long. Passwords must be between 8 and 20 characters.";
+                 		} else {
+                 			post('register.php', {username: username, password: password, email: email})
+                 		}
+                 	}
+                 </script>
                  <input type="submit" value="Create account">
 </form>
             <?php else: ?>
