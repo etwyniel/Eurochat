@@ -1,9 +1,16 @@
 body {
 	background-color: #008CBA;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-family: Raleway;  /*"Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
 	text-align: left;
 	margin: 0;
 	padding: 0
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), url(https://fonts.gstatic.com/s/raleway/v9/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
 }
 
 body a {
@@ -24,37 +31,40 @@ body a {
 	background-color: white;
 	background-size: 9em;
 	background-repeat: no-repeat;
-	box-shadow: 2px 10px 50px black;
+	box-shadow: 2px 15px 50px black;
 }
 
 h1 {
 	margin: 0;
 	font-size: 7em;
 	position: relative;
-	top: .2em
+	top: .2em;
+    opacity: 0.85   
 }
 
 h2 {
 	font-size: 1.5em;
 	color: white;
 	text-align: center;
-	text-decoration: underline;
 	background-color: #071B21;
 	position: relative;
-	top: .5em
+	top: .5em;
+    box-shadow: 0px -2px 10px black;
 }
 
 #main {
-	width: 65%;
-	background-color: white;
-	display: inline-block;
-	margin: auto;
+	width: 75%;
+	background-color: black;
+	/*display: inline-block;*/
+    color: white;
+	margin-left: 2em;
 	border-left: 3px solid black;
 	border-right: 3px solid black;
 	border-radius: 2px;
 	padding-left: 1em;
 	padding-right: 1em;
-	padding-bottom: 1em
+	padding-bottom: 1em;
+    text-align: justify
 }
 
 #log {
@@ -63,12 +73,15 @@ h2 {
     font-size: .8em;
     padding-right: 3px;
     position: relative;
-    top: -19em;
-    height: 2em
+    top: -5em;
+    height: 2em;
+    color:  black;
+    margin-right: .4em
 }
 
 #log a {
-    text-decoration: underline;
+    text-decoration: none;
+    font-weight: bold
 }
 
 #main h3 {
@@ -84,11 +97,11 @@ h2 {
 #links {
 	background-color: #071B21;
 	border: 1px solid #071B21;
-	text-align: center;
+	margin-left: 2em;
 	border-radius: 3px;
 	color: white;
-	width: 60%;
-	margin: auto
+	width: 78%;
+    text-align: center
 }
 
 body p a:link {
@@ -107,8 +120,8 @@ body p a:hover {
 }
 
 .wrap {
-	background-color: #AAAAAA;
-	border: 3px solid gray;
+	background-color: #071B21;
+	border: 3px solid #071B21;
 	border-radius: 2px;
 	margin-top: 0;
 	padding-left: 1em;
@@ -119,7 +132,7 @@ body p a:hover {
 	display: inline-block;
 	border-left: 5px solid #071B21;
 	border-radius: 10px;
-	background-color: gray;
+	background-color: #071B21;
 	margin-left: 2em;
 	width: 12%;
 	position: relative;
@@ -160,5 +173,7 @@ textarea {
 footer {
 	text-align: center;
 	font-size: .7em;
-	font-weight: bold
+	font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 0.8em
 }

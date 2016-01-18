@@ -27,10 +27,6 @@
 			<a href="info.php"> Info</a>
 		</p>
 		<br>
-		<div id="side">
-			<h3>Created by:</h3>
-			<ul><li><a href="http://euw.leagueoflegends.com">Etwyniel</a></li><li>Aymeric</li><li>Beringer</li><li><span style="font-size: 7px">Caillou</span></li></ul>
-		</div>
 		<div id="main">
 			<br>
 			<h3>Info!</h3>
@@ -43,7 +39,7 @@
 				<li>Hideo Kojima</li>
 			</ul>
 		</div>
-		<h6>&#169 Aymeric Beringer 2016 - All rights reserved</h6>
+		<footer>&#169 Aymeric Beringer 2016 - All rights reserved</footer>
 	</body>
 	
 </html>

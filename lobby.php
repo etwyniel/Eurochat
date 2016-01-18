@@ -31,20 +31,11 @@
 			<a href="info.php"> Info</a>
 		</p>
 		<br>
-		<div id="side">
-			<h3>Created by:</h3>
-			<ul>
-                <li><a href="http://euw.leagueoflegends.com">Etwyniel</a></li>
-                <li>Aymeric</li>
-                <li>Beringer</li>
-                <li><span style="font-size: 7px">Caillou</span></li>
-            </ul>
-		</div>
 		<div id="main">
 			<br>
 			<h3> Welcome to Lobby <?php echo $_GET['lobby'];?>!</h3><br>
 			<p class="wrap">Welcome to this website!<br>It doesn't really serve any purpose for now...</p>
-		    <textarea rows="4" cols="50" readonly="true" id="chat" name="output"></textarea>
+		    <textarea rows="4" cols="50" readonly id="chat" name="output"></textarea>
             <script type="text/javascript">
                 var username = '<?php echo $_SESSION['username'];?>';
 
@@ -62,9 +53,11 @@
             onkeypress="if (event.keyCode==13 && document.getElementById('send').value != '') {send();}"
             autofocus="true"
             autocomplete="off">
-                <input type="button" onclick="if (document.getElementById('send').value != '') {send();}" value="Send">
+                <input type="button" onclick="if (document.getElementById('send').value != '') {
+                                                        send();
+                                                        document.getElementById('send').focus();}" value="Send">
         </div>
-		<h6>&#169; Aymeric Beringer 2016 - All rights reserved</h6>
+		<footer>&#169; Aymeric Beringer 2016 - All rights reserved</footer>
 	</body>
 	
 </html>
