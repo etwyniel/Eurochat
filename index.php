@@ -31,7 +31,7 @@
 		<aside id="side">
 			<h3>Created by:</h3>
 			<ul>
-        		 <li><a href="http://euw.leagueoflegends.com">Etwyniel</a></li>
+        		 <li>Etwyniel</li>
         		 <li>Aymeric</li>
         		 <li>Beringer</li>
         		 <li><span style="font-size: 7px">Caillou</span></li>
