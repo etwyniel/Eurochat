@@ -28,10 +28,6 @@
 			<a href="info.php"> Info</a>
 		</p>
 		<br>
-		<aside id="side">
-			<h3>Created by:</h3>
-			<ul><li><a href="http://euw.leagueoflegends.com">Etwyniel</a></li><li>Aymeric</li><li>Beringer</li><li><span style="font-size: 7px">Caillou</span></li></ul>
-		</aside>
 		<div id="main">
 			<br>
             <?php if ($_GET['error'] != 'none'):?>
