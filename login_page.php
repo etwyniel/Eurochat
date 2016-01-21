@@ -28,29 +28,29 @@
 			<a href="lobby.php?lobby=4"> FRA - USA </a> | 
 			<a href="info.php"> Info</a>
 		</p>
+        <?php
+            $e = $_GET['error'];
+            switch ($e) {
+                case 'no_username':
+                echo "<p>Please enter your username.</p>";
+                break;
+            case 'no_pwd':
+                echo "<p>Please enter your password.</p>";
+                break;
+            case 'unregistered':
+                echo "<p>Uknown account.</p>";
+                break;
+            case 'wrong_pwd':
+                echo "<p>Wrong password.</p>";
+                break;
+            }
+        ?>
 		<br>
 		<div id="main">
 			<br>
 			<h3>Log in using your credentials:</h3><br>
              <form style="margin: auto" action="login.php" method="post">
-                 <?php
-                     $e = $_GET['error'];
-                     switch ($e) {
-                         case 'no_username':
-                            echo "<p>Please enter your username.</p>";
-                            break;
-                        case 'no_pwd':
-                            echo "<p>Please enter your password.</p>";
-                            break;
-                        case 'unregistered':
-                            echo "<p>Uknown account.</p>";
-                            break;
-                        case 'wrong_pwd':
-                            echo "<p>Wrong password.</p>";
-                            break;
-                     }
-                 ?>
-                 Username:<input type="text" name="username" autocomplete="off">
+                 Username:<input type="text" name="username" autocomplete="off" autofocus="true">
                  Password:<input type="password" name="password">
                 <input type="submit" value="Log in" onkeypress="enter">
              </form>

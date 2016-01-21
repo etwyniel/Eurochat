@@ -3,7 +3,7 @@ body {
 	font-family: Raleway;  /*"Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
 	text-align: left;
 	margin: 0;
-	padding: 0
+	padding: 0;
 }
 
 @font-face {
@@ -39,7 +39,6 @@ h1 {
 	font-size: 7em;
 	position: relative;
 	top: .2em;
-    opacity: 0.85   
 }
 
 h2 {
@@ -64,7 +63,7 @@ h2 {
 	padding-left: 1em;
 	padding-right: 1em;
 	padding-bottom: 1em;
-    text-align: justify
+    text-align: justify;
 }
 
 #log {
@@ -77,6 +76,24 @@ h2 {
     height: 2em;
     color:  black;
     margin-right: .4em
+}
+
+#login {
+    position: fixed;
+    margin-right: 2em;
+    width:  20%;
+    right: -.5em;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    width: 14%;
+    padding-left: .8em;
+    padding-bottom: .3em;
+    top: 19.05em
+}
+
+#login input[type='submit'] {
+    margin-top: .3em
 }
 
 #log a {
@@ -101,7 +118,8 @@ h2 {
 	border-radius: 3px;
 	color: white;
 	width: 78%;
-    text-align: center
+    text-align: center;
+    position: relative
 }
 
 body p a:link {

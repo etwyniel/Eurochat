@@ -14,11 +14,11 @@
 			<h1>EuroChat</h1>
 			<h2>An efficient way of communicating between penfriends</h2>
 		</a></div>
-            <?php if ($_SESSION['logged_in']) {
-     echo "<div id='log'><a href='logout.php'>Log out</a></div>";
- } else {
-     echo "<div id='log'><a href='register.php'>Register</a> <a href='login.php'>Log in</a></div>";
- }?>
+        <?php if ($_SESSION['logged_in']) {
+            echo "<div id='log'><a href='logout.php'>Log out</a></div>";
+        } else {
+            echo "<div id='log'><a href='register.php'>Register</a> <a href='login.php'>Log in</a></div>";
+        }?>
 		<p id="links">
 			<a href="index.php">Home</a> | 
 			<a href="lobby.php?lobby=1"> FRA - ENG </a> | 
@@ -50,7 +50,7 @@
                  case 'email_taken': echo "<p>This email is already in use.</p>";
                  }?>
                  <p id="error"></p>
-                 Username:<input type="text" name="username" id="username" required>
+                 Username:<input type="text" name="username" id="username" required autofocus="true">
                  Password:<input type="password" name="password" id="password" required>
                  Email:<input type="email" name="email" id="email" required>
                  <script>
