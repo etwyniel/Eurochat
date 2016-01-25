@@ -17,7 +17,7 @@
         <?php if ($_SESSION['logged_in']) {
             echo "<div id='log'><a href='logout.php'>Log out</a></div>";
         } else {
-            echo "<div id='log'><a href='register.php'>Register</a> <a href='login.php'>Log in</a></div>";
+            echo "<div id='log'><a href='register.php'>Register</a> or <a href='login.php'>Log in</a></div>";
         }?>
 		<p id="links">
 			<a href="index.php">Home</a> | 
@@ -33,7 +33,7 @@
             <?php if ($_GET['error'] != 'none'):?>
 			<h3> Create an account:</h3><br>
 			<p class="wrap">Please enter a name, a password and a valid email adress.</p>
-             <form action="register.php" method="post">
+             <form action="register.php" method="post" style="margin: auto">
                  <?php 
                  $e = $_GET['error']; 
                  switch ($e) {
