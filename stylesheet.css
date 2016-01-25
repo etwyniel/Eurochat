@@ -47,7 +47,7 @@ h2 {
 	text-align: center;
 	background-color: #071B21;
 	position: relative;
-	top: .5em;
+	top: 0em;
     box-shadow: 0px -2px 10px black;
 }
 
@@ -72,7 +72,7 @@ h2 {
     font-size: .8em;
     padding-right: 3px;
     position: relative;
-    top: -5em;
+    top: 2em;
     height: 2em;
     color:  black;
     margin-right: .4em
@@ -115,6 +115,7 @@ h2 {
 	background-color: #071B21;
 	border: 1px solid #071B21;
 	margin-left: 2em;
+    margin-top: 2em;
 	border-radius: 3px;
 	color: white;
 	width: 78%;

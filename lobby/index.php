@@ -1,34 +1,34 @@
 <?php
     session_start();
     if (!$_SESSION['logged_in']) {
-        header('Location: login_page.php');
+        header('Location: ../login');
     }
 ?>
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+		<link rel="stylesheet" type="text/css" href="../stylesheet.css" />
 		<title>Eurochat</title>
         <link rel="shortcut icon" href="http://sstatic.net/stackoverflow/img/favicon.ico">
 	</head>
 	<body>
-		<div  id="header"><a href="index.php">
+		<div  id="header"><a href="..">
 			<h1>EuroChat</h1>
-			<h2>An efficient way of communicating between penfriends</h2>
-		</a></div>
             <?php if ($_SESSION['logged_in']) {
      echo "<div id='log'><a href='logout.php'>Log out</a></div>";
  } else {
      echo "<div id='log'><a href='register_page.php'>Register</a> <a href='login_page.php'>Log in</a></div>";
  }?>
+			<h2>An efficient way of communicating between penfriends</h2>
+		</a></div>
 		<p id="links">
-			<a href="index.php">Home</a> | 
-			<a href="lobby.php?lobby=1"> FRA - ENG </a> | 
-			<a href="lobby.php?lobby=2"> FRA - DEU </a> | 
-			<a href="lobby.php?lobby=3"> FRA - SPA </a> | 
-			<a href="lobby.php?lobby=4"> FRA - USA </a> | 
-			<a href="info.php"> Info</a>
+			<a href="../">Home</a> | 
+			<a href="../lobby?lobby=1"> FRA - ENG </a> | 
+			<a href="../lobby?lobby=2"> FRA - DEU </a> | 
+			<a href="../lobby?lobby=3"> FRA - SPA </a> | 
+			<a href="../lobby?lobby=4"> FRA - USA </a> | 
+			<a href="../about"> Info</a>
 		</p>
 		<br>
 		<div id="main">

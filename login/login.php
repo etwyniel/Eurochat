@@ -11,19 +11,19 @@
     echo '<br>' . crypt($password, 'botsrule');
 
    if (!$username) {
-        header("Location: login_page.php?error=no_username");
+        header("Location: ../login?error=no_username");
         $mysqli->close();
         exit();
     } elseif (!$password) {
-        header("Location: login_page.php?error=no_pwd");
+        header("Location: ../login?error=no_pwd");
         $mysqli->close();
         exit();
     } elseif (!$r->num_rows) {
-        header('Location: login_page.php?error=unregistered');
+        header('Location: ../login?error=unregistered');
         $mysqli->close();
         exit();
     } elseif ($a['password'] != crypt($password, 'botsrule')) {
-        header('Location: login_page.php?error=wrong_pwd');
+        header('Location: ../login?error=wrong_pwd');
         $mysqli->close();
         exit();
     } else {
@@ -31,7 +31,7 @@
         $_SESSION['password'] = $password;
         $_SESSION['username'] = $username;
         $_SESSION['logged_in'] = TRUE;
-        header("Location: index.php?");
+        header("Location: ../");
         exit();
     }
 ?>

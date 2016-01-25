@@ -13,43 +13,33 @@
 	<body>
 		<div  id="header"><a href="index.php">
 			<h1>EuroChat</h1>
-			<h2>An efficient way of communicating between penfriends</h2>
-		</a></div>
             <?php if ($_SESSION['logged_in']) {
      echo "<div id='log'><a href='logout.php'>Log out</a></div>";
  } else {
-     echo "<div id='log'><a href='register_page.php'>Register</a> or <a href='login_page.php'>Log in</a></div>";
+     echo "<div id='log'><a href='register'>Register</a> or <a href='login'>Log in</a></div>";
  }?>
+			<h2>An efficient way of communicating between penfriends</h2>
+		</a></div>
 		<p id="links">
-			<a href="index.php">Home</a> | 
-			<a href="lobby.php?lobby=1"> FRA - ENG </a> | 
-			<a href="lobby.php?lobby=2"> FRA - DEU </a> | 
-			<a href="lobby.php?lobby=3"> FRA - SPA </a> | 
-			<a href="lobby.php?lobby=4"> FRA - USA </a> | 
-			<a href="info.php"> Info</a>
+			<a href="..">Home</a> | 
+			<a href="lobby?lobby=1"> FRA - ENG </a> | 
+			<a href="lobby?lobby=2"> FRA - DEU </a> | 
+			<a href="lobby?lobby=3"> FRA - SPA </a> | 
+			<a href="lobby?lobby=4"> FRA - USA </a> | 
+			<a href="about"> Info </a>
 		</p>
         <?php if (!$_SESSION['logged_in']):?>
         <div id="login">
             <h3>Login:</h3>
-            <form action="login.php" method="post">
+            <form action="login/login.php" method="post">
                 Username<input type="text" name="username">
                 Password<input type="password" name="password">
                 <input type="submit" value="Log in">
             </form>
-            <a href="register_page.php" style="color:  white; font-size: .7em; margin-left: .6em">or create an account here</a>
+            <a href="register" style="color:  white; font-size: .7em; margin-left: .6em">or create an account here</a>
         </div>
         <?php endif ?>
 		<br>
-        <!--
-		<aside id="side">
-			<h3>Created by:</h3>
-			<ul>
-                <li><a href="http://euw.leagueoflegends.com">Etwyniel</a></li>
-                <li>Aymeric</li>
-                <li>Beringer</li>
-                <li><span style="font-size: 7px">Caillou</span></li>
-            </ul>
-		</aside>-->
 		<div id="main">
 			<br>
 			<h3> Welcome <?php echo $_SESSION['username'];?>!</h3><br>

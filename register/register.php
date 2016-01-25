@@ -8,27 +8,27 @@ $mysqli = new mysqli('sql4.freemysqlhosting.net', 'sql4103349', 'ugtSzWBZrY', 's
 $check_username = "SELECT * FROM credentials WHERE username = '$username'";
 $check_email = "SELECT * FROM credentials WHERE email = '$email'";
 if (strlen($username) < 4) {
-    header('Location: register_page.php?error=username_short');
+    header('Location: ../register?error=username_short');
     $mysqli->close();
     exit();
 } elseif (strlen($username) > 16) {
-    header('Location: register_page.php?error=username_long');
+    header('Location: ../register?error=username_long');
     $mysqli->close();
     exit();
 } elseif (strlen($password) < 8) {
-    header('Location: register_page.php?error=password_short');
+    header('Location: ../register?error=password_short');
     $mysqli->close();
     exit();
 } elseif (strlen($password) > 20) {
-    header('Location: register_page.php?error=password_long');
+    header('Location: ../register?error=password_long');
     $mysqli->close();
     exit();
 } elseif ($mysqli->query($check_username)->num_rows) {
-    header('Location: register_page.php?error=username_taken');
+    header('Location: ../register?error=username_taken');
     $mysqli->close();
     exit();
 } elseif ($mysqli->query($check_email)->num_rows) {
-    header('Location: register_page.php?error=email_taken');
+    header('Location: ../register?error=email_taken');
     $mysqli->close();
     exit();
 } else {
@@ -37,7 +37,7 @@ if (strlen($username) < 4) {
     $mysqli->query($sql);
     $mysqli->close();
     echo 'still alive!';
-    header('Location: register_page.php?error=none');
+    header('Location: ../register?error=none');
     exit();
 }
 ?>
