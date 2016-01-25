@@ -18,7 +18,7 @@
             <?php if ($_SESSION['logged_in']) {
      echo "<div id='log'><a href='logout.php'>Log out</a></div>";
  } else {
-     echo "<div id='log'><a href='register_page.php'>Register</a> <a href='login_page.php'>Log in</a></div>";
+     echo "<div id='log'><a href='register_page.php'>Register</a> or <a href='login_page.php'>Log in</a></div>";
  }?>
 		<p id="links">
 			<a href="index.php">Home</a> | 
@@ -28,6 +28,10 @@
 			<a href="lobby.php?lobby=4"> FRA - USA </a> | 
 			<a href="info.php"> Info</a>
 		</p>
+		<br>
+		<div id="main">
+			<br>
+			<h3>Log in using your credentials:</h3><br>
         <?php
             $e = $_GET['error'];
             switch ($e) {
@@ -45,10 +49,6 @@
                 break;
             }
         ?>
-		<br>
-		<div id="main">
-			<br>
-			<h3>Log in using your credentials:</h3><br>
              <form style="margin: auto" action="login.php" method="post">
                  Username:<input type="text" name="username" autocomplete="off" autofocus="true">
                  Password:<input type="password" name="password">
