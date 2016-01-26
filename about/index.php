@@ -8,7 +8,7 @@
         <meta name="description" content="PLZ">
 		<link rel="stylesheet" type="text/css" href="../stylesheet.css" />
 		<title>Eurochat</title>
-        <link rel="shortcut icon" href="http://sstatic.net/stackoverflow/img/favicon.ico">
+        <link rel="shortcut icon" href="../pouletwyniel.ico">
 	</head>
 	<body>
 		<div  id="header"><a href="..">
@@ -16,7 +16,7 @@
         <?php if ($_SESSION['logged_in']) {
      echo "<div id='log'><a href='../logout.php'>Log out</a></div>";
  } else {
-     echo "<div id='log'><a href='../register'>Register</a> <a href='../login'>Log in</a></div>";
+     echo "<div id='log'><a href='../register'>Register</a> or <a href='../login'>Log in</a></div>";
  }?>
 			<h2>An efficient way of communicating between penfriends</h2>
 		</a></div>

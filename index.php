@@ -8,7 +8,7 @@
         <meta name="description" content="PLZ">
 		<link rel="stylesheet" type="text/css" href="stylesheet.css" />
 		<title>Eurochat</title>
-        <link rel="shortcut icon" href="http://sstatic.net/stackoverflow/img/favicon.ico">
+        <link rel="shortcut icon" href="pouletwyniel.ico">
 	</head>
 	<body>
 		<div  id="header"><a href="index.php">
