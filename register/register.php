@@ -3,8 +3,7 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 $email = $_POST['email'];
 
-//$mysqli = new mysqli('sql4.freemysqlhosting.net', 'sql4103349', 'ugtSzWBZrY', 'sql4103349');
-$mysqli = new mysqli('localhost', 'root', 'bdaea8ke', 'myDB');
+$mysqli = new mysqli('sql4.freemysqlhosting.net', 'sql4103349', 'ugtSzWBZrY', 'sql4103349');
 
 /*if ($mysqli->connect_errno > 0) {
     header('Location: ../newDB');
