@@ -1,8 +1,10 @@
 <?php
     session_start();
-    if (!$_SESSION['logged_in']) {
+    if (!$_SESSION['logged_in'] or !$_GET['lobby']) {
         header('Location: ../login');
+        die();
     }
+    $_SESSION['lobby'] = $_GET['lobby'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -37,11 +39,54 @@
 			<p class="wrap">Welcome to this website!<br>It doesn't really serve any purpose for now...</p>
 		    <textarea rows="4" cols="50" readonly id="chat" name="output"></textarea>
             <script type="text/javascript">
-                var username = '<?php echo $_SESSION['username'];?>';
+                window.onload = function () {
+                    function readTextfile() {
+                        var xhr = new XMLHttpRequest();
 
+                        xhr.onreadystatechange = function () {
+                            if (xhr.readyState === 4) {
+                                if (xhr.status == 200) {
+                                    showContents(xhr.responseText, xhr);
+                                }
+                            }
+                        }
+
+                        xhr.open('GET', 'log<?php echo $_GET['lobby']; ?>.txt', true);
+                        xhr.send();
+                    setTimeout(readTextfile, 50 );
+                    }
+                var previous;
+                    function showContents(responseText) {
+                        var chat = document.getElementById('chat');
+
+                        if (previous != responseText) {
+                            chat.scrollTop = document.getElementById("chat").scrollHeight;
+                        }
+                        chat.value = responseText;
+                        previous = responseText;
+                    }
+
+                    
+                    readTextfile();
+                    
+                }
+            </script>
+            
+            <script type="text/javascript">
+
+
+                var username = '<?php echo $_SESSION['username'];?>';
+                
                 function send() {
-                    document.getElementById('chat').value += username + ": " + document.getElementById('send').value + "\n";
-                    var value = document.createTextNode(document.getElementById('send').value);
+                    var request = new XMLHttpRequest();
+                    var message = document.getElementById('send').value;
+                    var param = 'message=' + message;
+
+                    request.open('POST', 'write.php?lobby=1', 'true');
+                    request.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+                    request.send(param);
+                    /*document.getElementById('chat').value += username + ": " + document.getElementById('send').value + "\n";
+                    var value = document.createTextNode(document.getElementById('send').value);*/
                     document.getElementById('send').value = "";
                 }
             </script>
