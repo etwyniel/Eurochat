@@ -57,7 +57,7 @@
             	    	echo $a['username'];
             	    	echo ' [' . date('d/m/y G:i', strtotime($a['reg_date'])) . ']: ';
             	    	echo $a['message'];
-            	    	echo '<br>'
+            	    	echo '<br>';
             	    }
             	?>
             </div>
