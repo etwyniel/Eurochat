@@ -51,10 +51,12 @@
             	<?php
             	    $mysqli = new mysqli('sql4.freemysqlhosting.net', 'sql4103349', 'ugtSzWBZrY', 'sql4103349');
             	    
-            	    $query = "SELECT * FROM message";
+            	    $query = "SELECT * FROM message ORDER BY reg_date ASC LIMIT 5";
             	    $r = mysqli_query($mysqli, $query);
-            	    $a = $r->fetch_assoc();
-            	    echo $a['message'];
+            	    while ($a = $r->fetch_assoc()) {
+            	    	echo $a['username'] . '(' $a['reg_date'] . '): ';
+            	    	echo $a['message'];
+            	    }
             	?>
             </div>
 		</div>
