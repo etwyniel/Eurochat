@@ -12,7 +12,7 @@
 	</head>
 	<body>
 		<div  id="header"><a href="index.php">
-			<h1>EuroChat</h1>
+			<h1>Euro<wbr>Chat</h1>
             <?php if ($_SESSION['logged_in']) {
      echo "<div id='log'><a href='logout.php'>Log out</a></div>";
  } else {
@@ -21,19 +21,19 @@
 			<h2>An efficient way of communicating between penfriends</h2>
 		</a></div>
 		<p id="links">
-			<a href="..">Home</a> | 
-			<a href="lobby?lobby=1"> FRA - ENG </a> | 
-			<a href="lobby?lobby=2"> FRA - DEU </a> | 
-			<a href="lobby?lobby=3"> FRA - SPA </a> | 
-			<a href="lobby?lobby=4"> FRA - USA </a> | 
+			<a href="..">Home</a>&emsp; | &emsp;
+			<a href="lobby?lobby=1"> FRA - ENG </a>&emsp; | &emsp;
+			<a href="lobby?lobby=2"> FRA - DEU </a>&emsp; | &emsp;
+			<a href="lobby?lobby=3"> FRA - SPA </a>&emsp; | &emsp;
+			<a href="lobby?lobby=4"> FRA - USA </a>&emsp; | &emsp;
 			<a href="about"> Info </a>
 		</p>
         <?php if (!$_SESSION['logged_in']):?>
         <div id="login">
             <h3>Login:</h3>
             <form action="login/login.php" method="post">
-                Username<input type="text" name="username" size="10em">
-                Password<input type="password" name="password" size="10em">
+                Username<br><input type="text" name="username" size="9%"><br>
+                Password<br><input type="password" name="password" size="9em">
                 <br>
                 <input type="submit" value="Log in">
             </form>
@@ -45,19 +45,73 @@
 			<br>
 			<h3> Welcome <?php echo $_SESSION['username'];?>!</h3><br>
 			<p class="wrap">Welcome to this website!<br>It doesn't really serve any purpose for now...</p>
-            <p> To use  this website, please login, or if you do not have any account, please register. This webapp has for purpose to develop communication between foreign students, allowing a better understanding of the world thanks to some penfriends.</p>
-            <p>Lorem ipsum dolor sit amet, a nulla nulla lacus dolor ut, nulla urna cubilia suspendisse urna. Praesent mollis, nunc sed nisi mollis fringilla sociis, sed lacus suspendisse consectetuer sed lectus, ultrices tellus turpis urna. Nulla mollis massa vitae molestie auctor, eget in, aliquam a arcu orci porta vitae, in scelerisque suspendisse ac est urna, condimentum nam. Phasellus vel elit voluptas maecenas, vel wisi pede, at condimentum in non eu, neque nec. Rutrum vulputate semper turpis tortor. A at aliquet, id maecenas dui quis, nam tortor, hic laoreet mauris, morbi mauris. Ac id ridiculus elit lorem accumsan, magna gravida augue, enim ut, libero erat, lorem non. Maecenas lectus vestibulum nunc velit, eget erat ipsum, ultrices volutpat felis, volutpat volutpat laoreet mi in sed, turpis pellentesque sollicitudin a convallis. Gravida tellus et nunc lectus enim risus, augue et cursus elementum luctus sit, felis vel scelerisque, ac mauris metus nulla mi lacus maecenas. Imperdiet eius arcu platea non interdum. Sed nulla sem duis commodo urna, dolor adipiscing, enim imperdiet pellentesque dignissim, lectus suspendisse lacinia amet, suscipit tellus quis. Quam et morbi, vel fringilla sit. Neque lorem et, nec ipsum donec. Pharetra et nunc placerat, ac elit non nunc nulla mattis consectetuer, lectus quam nunc. Erat justo ac, dolor habitasse consequat, justo ligula sed, neque in mauris commodo amet libero, platea pede at iaculis. Faucibus neque felis libero suscipit suscipit sit. Est nam corporis iaculis. Fringilla fringilla, sollicitudin sodales morbi ac ultrices neque ut. Velit aut porttitor eleifend augue suscipit posuere, maecenas et ante vestibulum, consequat hendrerit vestibulum ipsum fusce. Ac porta id, porta interdum eget nulla placerat diam nulla, senectus feugiat mauris, aenean malesuada ipsum lacinia donec morbi, volutpat maecenas. Elit luctus nec mi nunc et vehicula, wisi rutrum non. Rutrum mi aliquam, amet accumsan dui vel at ac nec, in rutrum viverra. Aliquam nec faucibus suspendisse, nam ut vestibulum volutpat feugiat aliquam, orci in. Scelerisque tristique ut. Dui arcu proin magna officia ut tempus, at ullamcorper vitae et adipiscing. Dui vel vestibulum vehicula ac vitae in, duis nostra. Vestibulum non vel molestie tincidunt ligula, mauris sed. Elit placerat pellentesque aliquam vel, mi ut vel. Et mauris neque risus nulla metus, viverra nec vel dolorum at sapien elit, metus ridiculus mauris, amet sociis, ligula augue tristique nunc.</p>
+            <p> To use  this website, please login, or if you do not have any account, please register. 
+                This webapp has for purpose to develop communication between foreign students, allowing
+                 a better understanding of the world thanks to some penfriends.</p>
+            <script type="text/javascript">
+                function post(path, params, method) {
+                    method = method || "post"; // Set method to post by default if not specified.
+                    // The rest of this code assumes you are not using a library.
+                    // It can be made less wordy if you use one.
+                    var form = document.createElement("form");
+                    form.setAttribute("method", method);
+                    form.setAttribute("action", path);
+                    for (var key in params) {
+                        if (params.hasOwnProperty(key)) {
+                            var hiddenField = document.createElement("input");
+                            hiddenField.setAttribute("type", "hidden");
+                            hiddenField.setAttribute("name", key);
+                            hiddenField.setAttribute("value", params[key]);
+                            form.appendChild(hiddenField);
+                        }
+                    }
+                    document.body.appendChild(form);
+                    form.submit();
+                }
+
+                function send() {
+                    var message = document.getElementById('send_forum');
+                    var error = document.getElementById('error');
+
+                    if (message.value.length > 1000) {
+                        error.innerHTML = 'Message too long.';
+                    } else if (message.value.length < 3) {
+                        error.innerHTML = 'Message too short';
+                    } else {
+                        post('post.php', { username: '<?php echo $_SESSION['username']; ?>', message: message.value });
+                    }
+                }
+            </script>
+            
             <div id="forum">
+                <?php if ($_SESSION['logged_in']):?>
+                <form action="post.php" method="post" style="width: 100%">
+                    Send a message:<p id="error"></p><div><textarea 
+                           name="text"
+                           rows="4"
+                           id="send_forum"
+                           onkeypress="if (event.keyCode==13 && document.getElementById('send_forum').value != '') {send();}">
+</textarea></div><br>
+                    <input 
+                        style="
+                            float: right;
+                            position: relative;
+                            top: -1em" 
+                        type="button" 
+                        value="Post" 
+                        onclick="if (document.getElementById('send_forum').value != '') {send();}">
+                </form>
+                <?php endif ?>
             	<?php
             	    $mysqli = new mysqli('sql4.freemysqlhosting.net', 'sql4103349', 'ugtSzWBZrY', 'sql4103349');
             	    
-            	    $query = "SELECT * FROM message ORDER BY reg_date ASC LIMIT 5";
+            	    $query = "SELECT * FROM message ORDER BY reg_date DESC LIMIT 5";
             	    $r = mysqli_query($mysqli, $query);
             	    while ($a = $r->fetch_assoc()) {
-            	    	echo $a['username'];
-            	    	echo ' [' . date('d/m/y G:i', strtotime($a['reg_date'])) . ']: ';
-            	    	echo $a['message'];
-            	    	echo '<br>';
+            	    	echo '<div class="message"><strong>' . $a['username'] . ':</strong>';
+            	    	echo '<div class="timestamp">[' . date('d/m/y G:i', strtotime($a['reg_date'])) . ']</div><br>';
+            	    	echo $a['message'] . '</div>';
+            	    	//echo '<br>';
             	    }
             	?>
             </div>
