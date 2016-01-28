@@ -32,8 +32,9 @@
         <div id="login">
             <h3>Login:</h3>
             <form action="../login/login.php" method="post">
-                Username<input type="text" name="username">
-                Password<input type="password" name="password">
+                Username<input type="text" name="username" size="10em">
+                Password<input type="password" name="password" size="10em">
+                <br>
                 <input type="submit" value="Log in">
             </form>
             <a href="../register" style="color:  white; font-size: .7em; margin-left: .6em">or create an account here</a>
