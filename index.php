@@ -54,7 +54,7 @@
             	    $query = "SELECT * FROM message ORDER BY reg_date ASC LIMIT 5";
             	    $r = mysqli_query($mysqli, $query);
             	    while ($a = $r->fetch_assoc()) {
-            	    	echo $a['username'] . '(' $a['reg_date'] . '): ';
+            	    	echo $a['username'] . '(' . $a['reg_date'] . '): ';
             	    	echo $a['message'];
             	    }
             	?>
