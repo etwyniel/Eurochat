@@ -89,7 +89,8 @@ h2 {
     width: 14%;
     padding-left: .8em;
     padding-bottom: .3em;
-    top: 19.05em
+    top: 19.05em;
+    box-shadow: 2px 2px 5px solid black;
 }
 
 #login input[type='submit'] {
