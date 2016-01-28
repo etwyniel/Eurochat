@@ -30,9 +30,9 @@ if (!$conn) {
     mysqli_query($conn, 'USE myDB');
     echo mysqli_error($conn);
     $sql = "CREATE TABLE IF NOT EXISTS message (
-    username VARCHAR(16) NOT NULL PRIMARY KEY,
+    username VARCHAR(16) NOT NULL,
     message VARCHAR(140) NOT NULL,
-    reg_date TIMESTAMP
+    reg_date TIMESTAMP PRIMARY KEY
     )";
 
     if (mysqli_query($conn, $sql)) {
