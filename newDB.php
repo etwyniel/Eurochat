@@ -27,7 +27,7 @@ if (!$conn) {
 //$sql = "CREATE DATABASE IF NOT EXISTS myDB";
 //if (mysqli_query($conn, $sql)) {
     echo "Database created successfully<br>";
-    mysqli_query($conn, 'USE myDB');
+    mysqli_query($conn, 'USE sql4103349');
     echo mysqli_error($conn);
     $sql = "CREATE TABLE IF NOT EXISTS message (
     username VARCHAR(16) NOT NULL,
