@@ -52,6 +52,17 @@
 				<li>Edouard Baetz</li>
 				<li>Hideo Kojima</li>
 			</ul>
+			<?php 
+				$mysqli = new mysqli('sql4.freemysqlhosting.net', 'sql4103349', 'ugtSzWBZrY', 'sql4103349');
+				$query = 'SELECT * FROM credentials';
+				
+				if ($r = mysqli_query($mysqli, $query)) {
+					echo mysqli_num_row($r);
+					echo 'people are using EuroChat';
+				}
+				
+				mysqli_close($mysqli);
+			?>
 		</div>
 		<footer>&#169 Aymeric Beringer 2016 - All rights reserved</footer>
 	</body>
