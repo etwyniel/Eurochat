@@ -3,7 +3,7 @@
     $message = $_POST['message'];
 
     $mysqli = new mysqli('sql4.freemysqlhosting.net', 'sql4103349', 'ugtSzWBZrY', 'sql4103349');
-    $query = "INSERT INTO message (username, message) VALUES ('$username', '$message')";
+    $query = "INSERT INTO message (username, message) VALUES ('$username', 'htmlspecialchars($message)')";
 
     if (mysqli_query($mysqli, $query)) {
         echo 'Success';
