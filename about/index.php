@@ -58,7 +58,7 @@
 				
 				$r = mysqli_query($mysqli, $query);
 				if ($r) {
-					echo mysqli_num_row($r);
+					echo $r->num_rows;
 					echo 'people are using EuroChat';
 				}
 				
