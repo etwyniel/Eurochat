@@ -56,7 +56,8 @@
 				$mysqli = new mysqli('sql4.freemysqlhosting.net', 'sql4103349', 'ugtSzWBZrY', 'sql4103349');
 				$query = 'SELECT * FROM credentials';
 				
-				if ($r = mysqli_query($mysqli, $query)) {
+				$r = mysqli_query($mysqli, $query)
+				if ($r) {
 					echo mysqli_num_row($r);
 					echo 'people are using EuroChat';
 				}
