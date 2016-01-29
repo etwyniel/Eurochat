@@ -88,6 +88,8 @@
                 <form action="post.php" method="post" style="width: 100%">
                     Send a message:<p id="error"></p><div><textarea 
                            name="text"
+                           placeholder="Type a message..."
+                           autofocus="true"
                            rows="4"
                            id="send_forum"
                            onkeypress="if (event.keyCode==13 && document.getElementById('send_forum').value != '') {send();}">
