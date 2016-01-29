@@ -80,7 +80,7 @@
                 function send() {
                     var request = new XMLHttpRequest();
                     var message = document.getElementById('send').value;
-                    var param = 'message=' + message;
+                    var param = 'message=' + message + '&lobby=' + <?php echo $_GET['lobby']?>;
 
                     request.open('POST', 'write.php?lobby=1', 'true');
                     request.setRequestHeader("Content-type","application/x-www-form-urlencoded");

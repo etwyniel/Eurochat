@@ -2,7 +2,7 @@
     session_start();
 
     
-    $lobby = $_SESSION['lobby'];
+    $lobby = $_POST['lobby'];
     $log = "log" . $lobby . ".txt";
     $message = $_POST['message'];
     echo $message;
