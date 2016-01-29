@@ -21,11 +21,11 @@
 			<h2>An efficient way of communicating between penfriends</h2>
 		</a></div>
 		<p id="links">
-			<a href="..">Home</a> | 
-			<a href="../lobby?lobby=1"> FRA - ENG </a> | 
-			<a href="../lobby?lobby=2"> FRA - DEU </a> | 
-			<a href="../lobby?lobby=3"> FRA - SPA </a> | 
-			<a href="../lobby?lobby=4"> FRA - USA </a> | 
+			<a href="..">Home</a> &emsp;| &emsp;
+			<a href="../lobby?lobby=1"> FRA - ENG </a> &emsp;| &emsp;
+			<a href="../lobby?lobby=2"> FRA - DEU </a> &emsp;| &emsp;
+			<a href="../lobby?lobby=3"> FRA - SPA </a> &emsp;| &emsp;
+			<a href="../lobby?lobby=4"> FRA - USA </a> &emsp;| &emsp;
 			<a href="../about"> Info</a>
 		</p>
         <?php if (!$_SESSION['logged_in']):?>
