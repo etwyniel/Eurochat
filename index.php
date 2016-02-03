@@ -59,7 +59,7 @@
 			<p class="wrap">Welcome to this website!<br>It doesn't really serve any purpose for now...</p>
             <p> To use  this website, please login, or if you do not have any account, please register. 
                 This webapp has for purpose to develop communication between foreign students, allowing
-                 a better understanding of the world thanks to some penfriends.</p>
+                 a better understanding of the world thanks to some penfriends. It is pretty obvious that the time has come to improve your skills into foreign languages and thus master the arts of international relations. It is a necessary thing to be able to speak in different languages so you can enter the world with better assets thatn some others and thus make you SPECIAL with Strengh, Perception, Endurance, Charisma, Intelligence, Agility and Luck</p>
             <script type="text/javascript">
                 //Méthode qui permet d'effectuer un 'POST' avec javascript
                 function post(path, params, method) {
