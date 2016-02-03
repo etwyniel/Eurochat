@@ -102,7 +102,7 @@
             <h3>Account successfully created!</h3>
             <?php endif ?>
 		</div>
-		<footer>&#169 Aymeric Beringer 2016 - All rights reserved</footer>
+		<footer>&#169 BERBAECA 2016 - All rights reserved</footer>
 	</body>
 	
 </html>
