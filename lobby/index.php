@@ -53,7 +53,7 @@
 
                         xhr.open('GET', 'log<?php echo $_GET['lobby']; ?>.txt', true);
                         xhr.send();
-                    setTimeout(readTextfile, 500 );
+                    setTimeout(readTextfile, 50 );
                     }
                 var previous;
                     function showContents(responseText) {
