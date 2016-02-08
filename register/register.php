@@ -1,7 +1,7 @@
 <?php
-$username = $_POST['username'];
+$username = htmlspecialchars($_POST['username'], ENT_QUOTES);
 $password = $_POST['password'];
-$email = $_POST['email'];
+$email = htmlspecialchars($_POST['email'], ENT_QUOTES);
 
 $mysqli = new mysqli('sql4.freemysqlhosting.net', 'sql4103349', 'ugtSzWBZrY', 'sql4103349');
 
@@ -40,7 +40,9 @@ if (strlen($username) < 4) {
     $sql = "INSERT INTO credentials (username, password, email) VALUES ('$username', '$pwd', '$email')";
     $mysqli->query($sql);
     $mysqli->close();
-    echo 'still alive!';
+    if ($mysqli->error) {
+        header('Location: ../register?error=format')
+    }
     header('Location: ../register?error=none');
     exit();
 }
