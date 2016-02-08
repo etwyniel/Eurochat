@@ -1,5 +1,5 @@
 <?php
-    $username = $_POST['username'];
+    $username = htmlspecialchars($_POST['username'], ENT_QUOTES);
     $password = $_POST['password'];
 
     $mysqli = new mysqli('sql4.freemysqlhosting.net', 'sql4103349', 'ugtSzWBZrY', 'sql4103349');
