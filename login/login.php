@@ -30,7 +30,7 @@
     } else {
         session_start();
         $_SESSION['password'] = $password;
-        $_SESSION['username'] = htmlspecialchars_decode($username, ENT_QUOTES);
+        $_SESSION['username'] = $username;
         $_SESSION['logged_in'] = TRUE;
         header("Location: ../");
         exit();
