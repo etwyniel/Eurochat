@@ -42,8 +42,9 @@ if (strlen($username) < 4) {
     $mysqli->close();
     if ($mysqli->error) {
         header('Location: ../register?error=format')
+    } else {
+        header('Location: ../register?error=none');
+        exit();
     }
-    header('Location: ../register?error=none');
-    exit();
 }
 ?>
