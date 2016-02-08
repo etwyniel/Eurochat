@@ -1,7 +1,7 @@
 <?php
     //On récupère le nom de l'utilisateur et le message passés en POST
     $username = $_POST['username'];
-    $message = htmlspecialchars($_POST['message']);
+    $message = htmlspecialchars($_POST['message'], ENT_QUOTES);
     
     //On crée une connexion à la base de données MySQL distante
     $mysqli = new mysqli('sql4.freemysqlhosting.net', 'sql4103349', 'ugtSzWBZrY', 'sql4103349');
