@@ -39,6 +39,14 @@
 			<p class="wrap">Welcome to this website!<br>It doesn't really serve any purpose for now...</p>
 		    <textarea rows="4" cols="50" readonly id="chat" name="output"></textarea>
             <script type="text/javascript">
+            	function escapeHtml(text) {
+			return text
+			.replace("&amp;", /&/g)
+			.replace("&lt;", /</g)
+			.replace("&gt;", />/g)
+			.replace("&quot;", /"/g)
+			.replace("&#039;", /'/g);
+}
                 window.onload = function () {
                     function readTextfile() {
                         var xhr = new XMLHttpRequest();
@@ -75,7 +83,7 @@
             <script type="text/javascript">
 
 
-                var username = '<?php echo $_SESSION['username'];?>';
+                var username = escapeHtml('<?php echo $_SESSION['username'];?>');
                 
                 function send() {
                     var request = new XMLHttpRequest();
