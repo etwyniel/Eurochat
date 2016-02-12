@@ -47,10 +47,10 @@
 			<p>This website was brought to you by:<br></p>
 			<ul>
 				<li>Aymeric Beringer</li>
-				<li>Hideo Kojima</li>
 				<li>Raphael Caillon</li>
 				<li>Edouard Baetz</li>
 				<li>Hideo Kojima</li>
+				<li>Gabe Newell</li>
 			</ul>
 			<?php 
 				$mysqli = new mysqli('sql4.freemysqlhosting.net', 'sql4103349', 'ugtSzWBZrY', 'sql4103349');
