@@ -32,8 +32,8 @@
         <div id="login">
             <h3>Login:</h3>
             <form action="../login/login.php" method="post">
-                Username<input type="text" name="username" size="11em">
-                Password<input type="password" name="password" size="11em">
+                Username<br><input type="text" name="username" size="11em"><br>
+                Password<br><input type="password" name="password" size="11em">
                 <br>
                 <input type="submit" value="Log in">
             </form>
