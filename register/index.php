@@ -96,7 +96,7 @@
                          }
                      }
                  </script>
-                 <input type="button" value="Create account" onclick="check_length();" style="margin-top: .3em">
+                 <input class="fancy_button" type="button" value="Create account" onclick="check_length();" style="margin-top: .3em">
 </form>
             <?php else: ?>
             <h3>Account successfully created!</h3>
