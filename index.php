@@ -64,6 +64,9 @@
             	window.onload = function () {
             		var login = document.getElementById('login');
             		login.style.top = '19.05em';
+            		
+            		var chat = document.getElementById('send_forum');
+            		chat.style.height = '10em';
             	}
                 //Méthode qui permet d'effectuer un 'POST' avec javascript
                 function post(path, params, method) {
@@ -106,6 +109,7 @@
                 if ($_SESSION['logged_in']):?>
                 <form action="post.php" method="post" style="width: 100%">
                     Send a message:<p id="error"></p><div><textarea 
+                    	   style="height: 0em; transition-duration: 0.3s; transition-delay: 1s"
                            name="text"
                            placeholder="Type a message..."
                            autofocus="true"
