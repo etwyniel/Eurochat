@@ -63,9 +63,13 @@
             <script type="text/javascript">
             	window.onload = function () {
             		var login = document.getElementById('login');
-            		login.style.top = '19.05em';
-            		
             		var chat = document.getElementById('send_forum');
+            		
+            		if (login) {
+            			login.style.top = '19.05em';
+            		} else {
+	            		var chat = document.getElementById('send_forum');
+            		}
             		chat.style.height = '10em';
             	}
                 //Méthode qui permet d'effectuer un 'POST' avec javascript
