@@ -8,6 +8,12 @@
         <meta name="description" content="PLZ">
 		<link rel="stylesheet" type="text/css" href="../stylesheet.css" />
 		<title>Eurochat</title>
+		 <script type="text/javascript">
+            	window.onload = function () {
+            		var login = document.getElementById('login');
+            		login.style.top = '19.05em';
+            	}
+            	</script>
         <link rel="shortcut icon" href="../pouletwyniel.ico">
 	</head>
 	<body>
