@@ -113,7 +113,7 @@
                 if ($_SESSION['logged_in']):?>
                 <form action="post.php" method="post" style="width: 100%">
                     Send a message:<p id="error"></p><div><textarea 
-                    	   style="height: 0em; transition-duration: 0.3s; transition-delay: 1s"
+                    	   style="height: 0em; transition-duration: 0.3s; transition-delay: 0.5s"
                            name="text"
                            placeholder="Type a message..."
                            autofocus="true"
