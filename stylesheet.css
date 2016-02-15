@@ -91,11 +91,19 @@ h2 {
 
 #log a {
     text-decoration: none;
-    font-weight: bold
+    font-weight: bold;
+	  transition-duration: 0.3s;
+}
+#log a:hover {
+	background: black;
+	color: white;
+	border-radius: 3px;
+	padding: 1px 3px;
 }
 
 /*Division pour entrer les identifiants sur n'importe quelle page*/
 #login {
+    transition-duration: 0.5s;
     position: fixed;
     margin-right: 2em;
     width:  20%;
@@ -106,7 +114,7 @@ h2 {
     width: 14%;
     padding-left: .8em;
     padding-bottom: .3em;
-    top: 19.05em;
+    top: -16em;
     box-shadow: 2px 10px 20px black;
 }
 #login input[type='submit'] {
@@ -134,10 +142,11 @@ h2 {
 }
 
 /*Liens de la page*/
-body p a:link {
+body p a {
 	color: white;
 	font-size: 1.2em;
 	text-decoration: none;
+	transition-duration: 0.2s;
 }
 
 body p a:visited {
@@ -146,7 +155,7 @@ body p a:visited {
 
 body p a:hover {
 	color: red;
-	font-style: italic
+	font-size: 1.25em;
 }
 
 /*Classe de division*/
@@ -244,4 +253,5 @@ footer {
 	color: white;
 	background: #071B21;
 	border-radius: 0px;
+	cursor: pointer;
 }
