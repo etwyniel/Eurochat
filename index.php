@@ -111,10 +111,7 @@
 </textarea></div><br>
 		<!-- Bouton pour exécuter la méthode d'envoi -->
                     <input 
-                        style="
-                            float: right;
-                            position: relative;
-                            top: -1em" 
+                    	class="fancy_button"
                         type="button" 
                         value="Post" 
                         onclick="if (document.getElementById('send_forum').value != '') {send();}">
