@@ -233,9 +233,6 @@ footer {
 
 /*Style du bouton pour envoyer les messaegs*/
 .fancy_button {
-	float: right;
-        position: relative;
-        top: -1em;
         transition-duration: 0.4s;
         background: white;
         border: none;
