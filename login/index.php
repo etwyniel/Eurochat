@@ -52,7 +52,7 @@
              <form style="margin: auto" action="login.php" method="post">
                  Username:<input type="text" name="username" autocomplete="off" autofocus="true" required>
                  Password:<input type="password" name="password" required>
-                <input type="submit" value="Log in" style="margin-top: .3em">
+                <input class="fancy_button" type="submit" value="Log in" style="margin-top: .3em">
              </form>
 		</div>
 		<footer>&#169 BERBAECA 2016 - All rights reserved</footer>
