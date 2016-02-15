@@ -106,7 +106,7 @@
             onkeypress="if (event.keyCode==13 && document.getElementById('send').value != '') {send();}"
             autofocus="true"
             autocomplete="off">
-                <input type="button" onclick="if (document.getElementById('send').value != '') {
+                <input class="fancy_button" type="button" onclick="if (document.getElementById('send').value != '') {
                                                         send();
                                                         document.getElementById('send').focus();}" value="Send">
         </div>
