@@ -230,3 +230,21 @@ footer {
     box-shadow: inset 2px 2px 5px black;
     background: white;
 }
+
+/*Style du bouton pour envoyer les messaegs*/
+.fancy_button {
+	float: right;
+        position: relative;
+        top: -1em;
+        transition-duration: 0.4s;
+        background: white;
+        border: none;
+        padding: 4px 10px;
+        border-radius: 3px;
+        font-family: Raleway;
+}
+.fancy_button:hover {
+	color: white;
+	background: #071B21;
+	border-radius: 0px;
+}
