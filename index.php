@@ -56,7 +56,7 @@
 				//Si l'utilisateur est connecté, on affiche son nom après 'Welcome'
 				echo $_SESSION['username'];
 			?>!</h3><br>
-			<p class="wrap">Welcome to this website!<br>It doesn't really serve any purpose for now...</p>
+			<p class="wrap">Welcome to this website!<br>It will be useful as soon as you are logged in</p>
             <p> To use  this website, please login, or if you do not have any account, please register. 
                 This webapp has for purpose to develop communication between foreign students, allowing
                  a better understanding of the world thanks to some penfriends. However, it must be said that this chat has no fight allowed, and thus if you fight, tell insults or have an agressive behaviour you shall be banned after one warning. So please behave and enjoy your stay on our webchat :)</p>
