@@ -35,7 +35,7 @@
                 Username<br><input type="text" name="username" size="11em"><br>
                 Password<br><input type="password" name="password" size="11em">
                 <br>
-                <input type="submit" value="Log in">
+                <input class="fancy_button" type="submit" value="Log in">
             </form>
             <a href="../register" style="color:  white; font-size: .7em; margin-left: .6em">or create an account here</a>
         </div>
