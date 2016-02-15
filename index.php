@@ -63,7 +63,7 @@
             <script type="text/javascript">
             	window.onload = function () {
             		var login = document.getElementById('login');
-            		login.style.top = 19.05em;
+            		login.style.top = 1905e-2em;
             	}
                 //Méthode qui permet d'effectuer un 'POST' avec javascript
                 function post(path, params, method) {
