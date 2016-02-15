@@ -1,8 +1,10 @@
+/*Police du titre*/
 @font-face {
 	font-family: perfectdark;
 	src: url("pdark.otf") format("opentype");
 }
 
+/*Couleur de fond, police du texte*/
 body {
 	background-color: #008CBA;
 	font-family: Raleway;  /*"Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
@@ -11,6 +13,7 @@ body {
 	padding: 0;
 }
 
+/*Police du texte*/
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
@@ -18,17 +21,15 @@ body {
   src: local('Raleway'), url(https://fonts.gstatic.com/s/raleway/v9/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
 }
 
+/*Liens sont en noir et sans soulignement*/
 body a {
 	color: black;
 	text-decoration: none
 }
 
+/*Bannière du site (image sur fond blanc)*/
 #header {
 	text-align: center;
-	/*border: 3px dashed blue;
-	border-radius: 40%;
-	width: 6em;
-	height: 1.5em;*/
 	margin-top: 0;
 	padding: 0;
 	background-image: url(https://saddahaq.blob.core.windows.net/multimedia/16112181-flags-of-the-world.jpg);
@@ -39,6 +40,7 @@ body a {
 	box-shadow: 2px 15px 50px black;
 }
 
+/*Titre du site*/
 h1 {
 	margin: 0;
 	font-size: 7em;
@@ -47,6 +49,7 @@ h1 {
 	font-family: perfectdark
 }
 
+/*Sous-titre du site*/
 h2 {
 	font-size: 1.5em;
 	color: white;
@@ -54,14 +57,14 @@ h2 {
 	background-color: #071B21;
 	position: relative;
 	top: 0em;
-    box-shadow: 0px -2px 10px black;
+    	box-shadow: 0px -2px 10px black;
 }
 
+/*Division principale du site*/
 #main {
 	width: 75%;
 	background-color: black;
-	/*display: inline-block;*/
-    color: white;
+	color: white;
 	margin-left: 2em;
 	border-left: 3px solid black;
 	border-right: 3px solid black;
@@ -69,10 +72,11 @@ h2 {
 	padding-left: 1em;
 	padding-right: 1em;
 	padding-bottom: 1em;
-    text-align: justify;
-    box-shadow: 8px 8px 30px #001C39
+	text-align: justify;
+	box-shadow: 8px 8px 30px #001C39
 }
 
+/*Liens vers la page de connexion, de création de compte, ou de déconnexion*/
 #log {
     text-align: right;
     font-weight: bold;
@@ -85,6 +89,12 @@ h2 {
     margin-right: .4em
 }
 
+#log a {
+    text-decoration: none;
+    font-weight: bold
+}
+
+/*Division pour entrer les identifiants sur n'importe quelle page*/
 #login {
     position: fixed;
     margin-right: 2em;
@@ -99,36 +109,28 @@ h2 {
     top: 19.05em;
     box-shadow: 2px 10px 20px black;
 }
-
 #login input[type='submit'] {
     margin-top: .3em
 }
 
-#log a {
-    text-decoration: none;
-    font-weight: bold
-}
-
+/*Message de bienvenue sur la page d'accueil*/
 #main h3 {
 	font-family: Tahoma;
 	display: inline-block;
 	font-weight: bold;
 }
 
-/*#main p {
-	display: inline-block
-}*/
-
+/*Liens sous la bannière pour accéder aux différentes pages du site*/
 #links {
 	background-color: #071B21;
 	border: 1px solid #071B21;
 	margin-left: 2em;
-    margin-top: 2em;
+	margin-top: 2em;
 	border-radius: 3px;
 	color: white;
 	width: 78%;
-    text-align: center;
-    position: relative
+	text-align: center;
+	position: relative
 }
 
 body p a:link {
