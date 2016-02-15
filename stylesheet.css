@@ -4,10 +4,10 @@
 	src: url("pdark.otf") format("opentype");
 }
 
-/*Couleur de fond, police du texte*/
+/*Couleur de fond, police et alignement du texte*/
 body {
 	background-color: #008CBA;
-	font-family: Raleway;  /*"Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
+	font-family: Raleway;
 	text-align: left;
 	margin: 0;
 	padding: 0;
@@ -120,7 +120,7 @@ h2 {
 	font-weight: bold;
 }
 
-/*Liens sous la bannière pour accéder aux différentes pages du site*/
+/*Barre de liens sous la bannière pour accéder aux différentes pages du site*/
 #links {
 	background-color: #071B21;
 	border: 1px solid #071B21;
@@ -133,6 +133,7 @@ h2 {
 	position: relative
 }
 
+/*Liens de la page*/
 body p a:link {
 	color: white;
 	font-size: 1.2em;
@@ -148,6 +149,7 @@ body p a:hover {
 	font-style: italic
 }
 
+/*Classe de division*/
 .wrap {
 	background-color: #071B21;
 	border: 3px solid #071B21;
@@ -157,48 +159,41 @@ body p a:hover {
 	padding-right: 1em
 }
 
-#side {
-	display: inline-block;
-	border-left: 5px solid #071B21;
-	border-radius: 10px;
-	background-color: #071B21;
-	margin-left: 2em;
-	width: 12%;
-	position: relative;
-	top: 2em;
-}
-
+/*Style pour les formulaires de connexion et de création de comptes*/
 form {
     width:  10em
 }
-
 form p {
 	color: red; 
-    font-size: .6em
+	font-size: .6em
 }
 
-h6 {
-	text-align: center;
-	position: relative;
-	bottom: 0em
-}
-
+/*Style de la zone de texte des lobbys*/
 #chat {
-    background-color: white;
+    margin-bottom: 0.3em;
     height:  20em;
     width: 100%;
-    border:  1px solid black;
+    background: white;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 10px black;
 }
 
+/*Style de la zone pour taper les messages vers les lobbys*/
 #send {
-    margin-left: 0;
-    border: 1px solid black;
+    margin-bottom: 0.3em;
+    background: white;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 10px black;
 }
 
+/*Règle pour empêcher l'utilisateur de redimensionner les zones de texte*/
 textarea {
     resize: none
 }
 
+/*Mention du bas de la page*/
 footer {
 	text-align: center;
 	font-size: .7em;
@@ -207,6 +202,7 @@ footer {
     margin-bottom: 0.8em
 }
 
+/*Style des messages de la page d'accueil*/
 .message {
     background-color: #071B21;
     border-radius: 10px;
@@ -214,6 +210,7 @@ footer {
     margin-top: 2em
 }
 
+/*Style de la date des messages*/
 .timestamp {
     font-size: .7em;
     color: #AAAAAA;
@@ -225,7 +222,11 @@ footer {
     top: -2em;
 }
 
+/*Style de la zone pour taper les messages vers la page d'accueil*/
 #send_forum {
     width: 100%;
     border-radius: 5px;
+    border: 0;
+    box-shadow: inset 2px 2px 5px black;
+    background: white;
 }
