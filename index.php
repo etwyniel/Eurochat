@@ -61,6 +61,10 @@
                 This webapp has for purpose to develop communication between foreign students, allowing
                  a better understanding of the world thanks to some penfriends. However, it must be said that this chat has no fight allowed, and thus if you fight, tell insults or have an agressive behaviour you shall be banned after one warning. So please behave and enjoy your stay on our webchat :)</p>
             <script type="text/javascript">
+            	window.onload = function () {
+            		var login = document.getElementById('login');
+            		login.style.top = 19.05em;
+            	}
                 //Méthode qui permet d'effectuer un 'POST' avec javascript
                 function post(path, params, method) {
                     method = method || "post"; // Set method to post by default if not specified.
