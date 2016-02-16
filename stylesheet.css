@@ -247,8 +247,9 @@ footer {
         background: white;
         border: none;
         padding: 4px 10px;
-        border-radius: 3px;
+        border-radius: 5px;
         font-family: Raleway;
+        transition-timing-function: ease-out;
 }
 .fancy_button:hover {
 	color: white;
