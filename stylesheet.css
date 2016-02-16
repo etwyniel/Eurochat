@@ -103,6 +103,7 @@ h2 {
 
 /*Division pour entrer les identifiants sur n'importe quelle page*/
 #login {
+    transition-timing-function: cubic-bezier(1,.32,.14,1.32);
     transition-delay: 0.5s;
     transition-duration: 0.6s;
     position: fixed;
@@ -239,6 +240,7 @@ footer {
     border: 0;
     box-shadow: inset 2px 2px 5px black;
     background: white;
+    transition-timing-function: ease-in-out;
 }
 
 /*Style du bouton pour envoyer les messaegs*/
