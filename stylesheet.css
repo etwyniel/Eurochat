@@ -242,6 +242,8 @@ footer {
     background: white;
     transition-timing-function: ease-in-out;
     padding: 5px;
+    position: relative;
+    left: -5px;
 }
 
 /*Style du bouton pour envoyer les messaegs*/
