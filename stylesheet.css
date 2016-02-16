@@ -93,13 +93,19 @@ h2 {
     text-decoration: none;
     font-weight: bold;
 	  transition-duration: 0.3s;
+	  position: relative;
+	  top: 0;
 }
 #log a:hover {
 	background: black;
 	color: white;
 	border-radius: 3px;
 	padding: 1px 3px;
+	box-shadow: 2px 2px 5px black;
+	top: -0.2em;
+	font-size: 1.1em
 }
+
 
 /*Division pour entrer les identifiants sur n'importe quelle page*/
 #login {
