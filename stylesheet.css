@@ -241,6 +241,7 @@ footer {
     box-shadow: inset 2px 2px 5px black;
     background: white;
     transition-timing-function: ease-in-out;
+    padding: 5px;
 }
 
 /*Style du bouton pour envoyer les messaegs*/
