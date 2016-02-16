@@ -9,10 +9,20 @@
 		<link rel="stylesheet" type="text/css" href="../stylesheet.css" />
 		<title>Eurochat</title>
 		 <script type="text/javascript">
-            	window.onload = function () {
-            		var login = document.getElementById('login');
-            		login.style.top = '19.05em';
-            	}
+	    	window.onload = function () {
+			var login = document.getElementById('login');
+			var chat = document.getElementById('send_forum');
+			var header = document.getElementById('header');
+			
+			header.style.background-size = '9em';
+			
+			if (login) {
+				login.style.top = '19.05em';
+			} else {
+		    		var chat = document.getElementById('send_forum');
+			}
+			chat.style.height = '10em';
+		}
             	</script>
         <link rel="shortcut icon" href="../pouletwyniel.ico">
 	</head>
