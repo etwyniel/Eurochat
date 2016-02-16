@@ -32,23 +32,31 @@
 		<div id="main">
 			<br>
 			<h3>Log in using your credentials:</h3><br>
+			<p style="color: red;
+			font-size: 0.7em;
+			text-align: center;
+			background: white;
+			border-radius: 3px;
+			width: 50%;
+			margin: auto">
         <?php
             $e = $_GET['error'];
             switch ($e) {
                 case 'no_username':
-                echo "<p>Please enter your username.</p>";
+                echo "Please enter your username.";
                 break;
             case 'no_pwd':
-                echo "<p>Please enter your password.</p>";
+                echo "Please enter your password.";
                 break;
             case 'unregistered':
-                echo "<p>Uknown account.</p>";
+                echo "Uknown account.";
                 break;
             case 'wrong_pwd':
-                echo "<p>Wrong password.</p>";
+                echo "Wrong password.";
                 break;
             }
         ?>
+	 	</p>
              <form style="margin: auto" action="login.php" method="post">
                  Username:<input type="text" name="username" autocomplete="off" autofocus="true" required>
                  Password:<input type="password" name="password" required>
