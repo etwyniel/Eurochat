@@ -38,7 +38,8 @@
 			background: white;
 			border-radius: 3px;
 			width: 50%;
-			margin: auto">
+			margin: auto;
+			font-weight: bold;">
         <?php
             $e = $_GET['error'];
             switch ($e) {
