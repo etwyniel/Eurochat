@@ -34,21 +34,23 @@
 			<h3> Create an account:</h3><br>
 			<p class="wrap">Please enter a name, a password and a valid email adress.</p>
              <form action="register.php" method="post" style="margin: auto">
+             	<p id="error">
                  <?php 
                  $e = $_GET['error']; 
                  switch ($e) {
-                 case 'username_taken': echo "<p>This username is already in use.</p>"; 
+                 case 'username_taken': echo "This username is already in use."; 
                  break;
-                 case 'username_long': echo "<p>This username is too long. Usernames must be between 4 and 16 characters.</p>";
+                 case 'username_long': echo "This username is too long. Usernames must be between 4 and 16 characters.";
                  break;
-                 case 'username_short': echo "<p>This username is too short. Usernames must be between 4 and 16 characters.</p>";
+                 case 'username_short': echo "This username is too short. Usernames must be between 4 and 16 characters.";
                  break;
-                 case 'password_long': echo "<p>This password is too long. Passwords must be between 8 and 20 characters.</p>";
+                 case 'password_long': echo "This password is too long. Passwords must be between 8 and 20 characters.";
                  break;
-                 case 'password_short': echo "<p>This password is too short. Passwords must be between 8 and 20 characters.</p>";
+                 case 'password_short': echo "This password is too short. Passwords must be between 8 and 20 characters.";
                  break;
-                 case 'email_taken': echo "<p>This email is already in use.</p>";
+                 case 'email_taken': echo "This email is already in use.";
                  }?>
+                 </p>
                  <p id="error"></p>
                  Username:<input type="text" name="username" id="username" required autofocus="true">
                  Password:<input type="password" name="password" id="password" required>
