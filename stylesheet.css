@@ -270,3 +270,12 @@ footer {
 	border-radius: 0px;
 	cursor: pointer;
 }
+
+#error {
+	color: red;
+	font-size: 0.7em;
+	text-align: center;
+	background: white;
+	border-radius: 3px;
+	margin: auto;
+}
