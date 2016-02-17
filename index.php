@@ -135,7 +135,7 @@
                 <?php endif ?>
             	<?php
             	    //affichage des 5 derniers messages stockés sur la base de données
-            	    $mysqli = new mysqli('sql4.freemysqlhosting.net', 'sql4103349', 'ugtSzWBZrY', 'sql4103349');
+            	    $mysqli = new mysqli($_ENV['DB_SERVER'], $_ENV['DB_USER'], $_ENV['DB_PASSWORD'], $_ENV['DB_USER']);
             	    
             	    $query = "SELECT * FROM message ORDER BY reg_date DESC LIMIT 5";
             	    $r = mysqli_query($mysqli, $query);
