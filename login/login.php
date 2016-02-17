@@ -36,7 +36,6 @@
     } else {
         //Si les identifiants sont corrects, on connecte l'utilisateur au site et on le redirige vers ka page d'accueil
         session_start();
-        $_SESSION['password'] = $password;
         $_SESSION['username'] = $username;
         $_SESSION['logged_in'] = TRUE;
         header("Location: ../");
