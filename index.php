@@ -59,7 +59,9 @@
             <p> To use properly this website, please login, or if you do not have any account, please register. 
                 As we are here to find solutions, and not create conflicts, we will not tolerate bad behaviors, insults, and unrelevant discussions.</p>
                 <p></p>
+                <p></p>
                 <p>NEWS : Jamie Gilt, a young 31 years old pro-gun activist, was shot 5 days ago by her 4 years old son, who used her legally purchased gun, which he was easily able to catch. Her life is not in danger anymore.</p>
+                <p></p>
                 <p>Here, you can see two of the last posters of our new sensibilization campaign <br />
                 <p></p>
     <img src="http://imageshack.com/a/img924/3963/9NAv8g.png" alt="Poster 1" /></p>
