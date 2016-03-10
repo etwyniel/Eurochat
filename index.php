@@ -58,8 +58,11 @@
 			<p class="wrap">Welcome to this website.<br>Here, you can have a closer look at the current situation, sign petitions and donate to support families and our cause.</p>
             <p> To use properly this website, please login, or if you do not have any account, please register. 
                 As we are here to find solutions, and not create conflicts, we will not tolerate bad behaviors, insults, and unrelevant discussions.</p>
-                <p>Here, you can see the poster of our new sensibilization campaign <br />
+                <p>Here, you can see two of the last posters of our new sensibilization campaign <br />
+                <p></p>
     <img src="http://imageshack.com/a/img924/3963/9NAv8g.png" alt="Poster 1" /></p>
+    <p></p>
+    <img src="http://http://imageshack.com/a/img921/3936/JrHqMI.png" alt="Poster 2" />
     <p></p>
     <h4><p> A list of events and some statistics:</p>   
     <p> University of texas : happened in August 1966, 14 people have been killed and 32 injured. The felon’s name is Whitman and he was a student at this university. Firearms implicated : YES <br />
