@@ -14,7 +14,7 @@
 	<body>
 		<!-- Haut de la page, titre et sous-titre -->
 		<div  id="header"><a href="index.php">
-			<h1>Stand up against<wbr>school massacre</h1>
+			<h1>Stand up against<wbr> school massacre</h1>
             <?php 
             //Si l'utilisateur n'est pas connecté, on lui propose des liens vers les pages de connexion et de création de compte
             //Sinon, on lui propose de se déconnecter
