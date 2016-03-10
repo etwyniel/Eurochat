@@ -60,6 +60,8 @@
                 As we are here to find solutions, and not create conflicts, we will not tolerate bad behaviors, insults, and unrelevant discussions.</p>
                 <p>Here, you can see the poster of our new sensibilization campaign <br />
     <img src="http://www.ones-fr.org/wordpress/wordpress/wp-content/uploads/2014/03/bisounours.jpg" alt="SUASM" /></p>
+    <p></p>
+    <h4><p> A few statistics :</p>    </h4>
                 <script type="text/javascript">
             	window.onload = function () {
             		var login = document.getElementById('login');
