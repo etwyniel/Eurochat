@@ -58,7 +58,8 @@
 			<p class="wrap">Welcome to this website.<br>Here, you can have a closer look at the current situation, sign petitions and donate to support families and our cause.</p>
             <p> To use properly this website, please login, or if you do not have any account, please register. 
                 As we are here to find solutions, and not create conflicts, we will not tolerate bad behaviors, insults, and unrelevant discussions.</p>
-            <script type="text/javascript">
+                <p>Here, you can see the poster of our new sensibilization campaign :</p>
+                <script type="text/javascript">
             	window.onload = function () {
             		var login = document.getElementById('login');
             		var chat = document.getElementById('send_forum');
