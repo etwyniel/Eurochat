@@ -59,7 +59,7 @@
             <p> To use properly this website, please login, or if you do not have any account, please register. 
                 As we are here to find solutions, and not create conflicts, we will not tolerate bad behaviors, insults, and unrelevant discussions.</p>
                 <p>Here, you can see the poster of our new sensibilization campaign <br />
-    <img src="http://www.ones-fr.org/wordpress/wordpress/wp-content/uploads/2014/03/bisounours.jpg" alt="SUASM" /></p>
+    <img src="https://www.ones-fr.org/wordpress/wordpress/wp-content/uploads/2014/03/bisounours.jpg" alt="SUASM" /></p>
     <p></p>
     <h4><p> A list of events and some statistics:</p>   
     <p> University of texas : happened in August 1966, 14 people have been killed and 32 injured. The felon’s name is Whitman and he was a student at this university. Firearms implicated : YES <br />
