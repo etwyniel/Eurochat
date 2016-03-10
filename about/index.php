@@ -7,7 +7,7 @@
 		<meta charset="utf-8" />
         <meta name="description" content="PLZ">
 		<link rel="stylesheet" type="text/css" href="../stylesheet.css" />
-		<title>Eurochat</title>
+		<title>SUASM</title>
 		 <script type="text/javascript">
 	    	window.onload = function () {
 			var login = document.getElementById('login');
@@ -25,20 +25,20 @@
 	</head>
 	<body>
 		<div  id="header"><a href="..">
-			<h1>EuroChat</h1>
+			<h1>Stand up against school massacre</h1>
         <?php if ($_SESSION['logged_in']) {
      echo "<div id='log'><a href='../logout.php'>Log out</a></div>";
  } else {
      echo "<div id='log'><a href='../register'>Register</a> or <a href='../login'>Log in</a></div>";
  }?>
-			<h2>An efficient way of communicating between penfriends</h2>
+			<h2>A project to prevent school shootings</h2>
 		</a></div>
 		<p id="links">
 			<a href="..">Home</a> &emsp;| &emsp;
-			<a href="../lobby?lobby=1"> FRA - ENG </a> &emsp;| &emsp;
-			<a href="../lobby?lobby=2"> FRA - DEU </a> &emsp;| &emsp;
-			<a href="../lobby?lobby=3"> FRA - SPA </a> &emsp;| &emsp;
-			<a href="../lobby?lobby=4"> FRA - USA </a> &emsp;| &emsp;
+			<a href="../lobby?lobby=1"> Education </a> &emsp;| &emsp;
+			<a href="../lobby?lobby=2"> Restriction Bills </a> &emsp;| &emsp;
+			<a href="../lobby?lobby=3"> Being responsible </a> &emsp;| &emsp;
+			<a href="../lobby?lobby=4"> Bonds for guns </a> &emsp;| &emsp;
 			<a href="../about"> Info</a>
 		</p>
         <?php if (!$_SESSION['logged_in']):?>
@@ -57,13 +57,11 @@
 		<div id="main">
 			<br>
 			<h3>Info!</h3>
-			<p>This website was brought to you by:<br></p>
+			<p>This initiative was brought to you by:<br></p>
 			<ul>
 				<li>Aymeric Beringer</li>
 				<li>Raphael Caillon</li>
-				<li>Edouard Baetz</li>
-				<li>Hideo Kojima</li>
-				<li>Gabe Newell</li>
+				<li>Alban Steff</li>
 			</ul>
 			<?php 
 				$mysqli = new mysqli($_ENV['DB_SERVER'], $_ENV['DB_USER'], $_ENV['DB_PASSWORD'], $_ENV['DB_USER']);
@@ -72,13 +70,13 @@
 				$r = mysqli_query($mysqli, $query);
 				if ($r) {
 					echo $r->num_rows;
-					echo ' people are using EuroChat.';
+					echo ' people are supporting the SUASM project.';
 				}
 				
 				mysqli_close($mysqli);
 			?>
 		</div>
-		<footer>&#169 BERBAECA 2016 - All rights reserved</footer>
+		<footer>&#169 BERCASTE 2016 - All rights reserved</footer>
 	</body>
 	
 </html>
