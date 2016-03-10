@@ -8,13 +8,13 @@
 		<meta charset="utf-8" />
         	<meta name="description" content="PLZ">
 		<link rel="stylesheet" type="text/css" href="stylesheet.css" />
-		<title>Eurochat</title>
+		<title>SUASM</title>
         	<link rel="shortcut icon" href="pouletwyniel.ico">
 	</head>
 	<body>
 		<!-- Haut de la page, titre et sous-titre -->
 		<div  id="header"><a href="index.php">
-			<h1>Euro<wbr>Chat</h1>
+			<h1>Stand up against<wbr>school massacre</h1>
             <?php 
             //Si l'utilisateur n'est pas connecté, on lui propose des liens vers les pages de connexion et de création de compte
             //Sinon, on lui propose de se déconnecter
@@ -23,16 +23,15 @@
  } else {
      echo "<div id='log'><a href='register'>Register</a> or <a href='login'>Log in</a></div>";
  }?>
-			<h2>An efficient way of communicating between penfriends</h2>
-		</a></div>
+			<h2>A new project to prevent school shootings
 		<!-- Liens vers les différentes pages du site -->
 		<p id="links">
 			<a href="..">Home</a>&emsp; | &emsp;
-			<a href="lobby?lobby=1"> FRA - ENG </a>&emsp; | &emsp;
-			<a href="lobby?lobby=2"> FRA - DEU </a>&emsp; | &emsp;
-			<a href="lobby?lobby=3"> FRA - SPA </a>&emsp; | &emsp;
-			<a href="lobby?lobby=4"> FRA - USA </a>&emsp; | &emsp;
-			<a href="about"> Info </a>
+			<a href="lobby?lobby=1"> Education </a>&emsp; | &emsp;
+			<a href="lobby?lobby=2"> Restriction bills </a>&emsp; | &emsp;
+			<a href="lobby?lobby=3"> Being responsible </a>&emsp; | &emsp;
+			<a href="lobby?lobby=4"> Bonds for guns </a>&emsp; | &emsp;
+			<a href="about"> Contact </a>
 		</p>
         <?php 
         //Si l'utilisateur n'est pas connecté, on lui affiche une boîte dans laquelle il peut entrer ses identifiants.
@@ -56,10 +55,9 @@
 				//Si l'utilisateur est connecté, on affiche son nom après 'Welcome'
 				echo $_SESSION['username'];
 			?>!</h3><br>
-			<p class="wrap">Welcome to this website!<br>It will be useful as soon as you are logged in</p>
-            <p> To use  this website, please login, or if you do not have any account, please register. 
-                This webapp has for purpose to develop communication between foreign students, allowing
-                 a better understanding of the world thanks to some penfriends. However, it must be said that this chat has no fight allowed, and thus if you fight, tell insults or have an agressive behaviour you shall be banned after one warning. So please behave and enjoy your stay on our webchat :)</p>
+			<p class="wrap">Welcome to this website.<br>Here, you can have a closer look at the current situation, sign petitions and donate to support families and our cause.</p>
+            <p> To use properly this website, please login, or if you do not have any account, please register. 
+                As we are here to find solutions, and not create conflicts, we will not tolerate bad behaviors, insults, and unrelevant discussions.</p>
             <script type="text/javascript">
             	window.onload = function () {
             		var login = document.getElementById('login');
