@@ -62,7 +62,7 @@
                 <p></p>
     <img src="http://imageshack.com/a/img924/3963/9NAv8g.png" alt="Poster 1" /></p>
     <p></p>
-    <img src="http://http://imageshack.com/a/img921/3936/JrHqMI.png" alt="Poster 2" />
+    <img src="http://imageshack.com/a/img921/3936/JrHqMI.png" alt="Poster 2" />
     <p></p>
     <h4><p> A list of events and some statistics:</p>   
     <p> University of texas : happened in August 1966, 14 people have been killed and 32 injured. The felon’s name is Whitman and he was a student at this university. Firearms implicated : YES <br />
