@@ -69,7 +69,7 @@
     <p></p>
     <h4><p> A list of events and some statistics:</p>   
     <p> University of texas : happened in August 1966, 14 people have been killed and 32 injured. The felon’s name is Whitman and he was a student at this university. Firearms implicated : YES <br />
-    <img src="http://www2.luventicus.org/cartes/etatsunis/texas/dallas.gif" alt="Map of texas" /></p>
+    <img src="https://cdn.monsieur-des-drapeaux.com/media/catalog/product/detail/grand-drapeau-usa-2856.jpg" alt="Map of texas" /></p>
     <p> Cleveland elementary school : January 29, 1979, in San Diego, California. 2 people killed and 9 injured. Perpetrated by a 16 years old female student. Firearms implicated : YES <br />
     <img src="http://www2.luventicus.org/cartes/etatsunis/californie.gif" alt="Map of california" /></p>
     <p> Virginia tech institute : April 16, 2007. 32 peole were found dead and 23 were injured. The shooter was identified as a senior at Virginia Tech, 23-year-old Seung-Hui Cho. Firearms implicated : YES <br />
