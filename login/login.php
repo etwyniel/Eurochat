@@ -11,7 +11,9 @@
     $check_username = "SELECT * FROM credentials WHERE username = '$username'";
     $r = $mysqli->query($check_username);
     echo $r->num_rows;
-    $a = $r->fetch_assoc();
+    if ($r != false) {
+        $a = $r->fetch_assoc();
+    }
 
    if (!$username) {
         //Si aucun nom d'utilisateur n'a été donné, on redirige l'utilisateur vers la page de connexion
