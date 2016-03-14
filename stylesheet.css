@@ -32,7 +32,7 @@ body a {
 	text-align: center;
 	margin-top: 0;
 	padding: 0;
-	background-image: url(https://cdn.monsieur-des-drapeaux.com/media/catalog/product/detail/grand-drapeau-usa-2856.jpg)  format('jpg');
+	background-image: url( "https://cdn.monsieur-des-drapeaux.com/media/catalog/product/detail/grand-drapeau-usa-2856.jpg" )  format('jpg');
 	background-position: center;
 	background-color: white;
 	background-size: 9em;
