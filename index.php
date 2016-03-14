@@ -65,12 +65,12 @@
                 <p class="wrap"> NEWS : On the fifth of January 2016, President Barack Obama made a heartmoving speech about the dangers that weapons represents in our country. He even cried as he spoke about these innocent victims</p>
                 <p>Here, you can see two of the last posters of our new sensibilization campaign <br />
                 </p>
-    <div class="Poster 1">
-<img src="hhttp://imageshack.com/a/img921/3936/JrHqMI.png" style="width: 1000px;" />
+    <div class="text-align: center; Poster 1">
+<img src="http://imageshack.com/a/img921/3936/JrHqMI.png" style="width: 2000px;" />
 </div>
     <p></p>
-    <div class="Poster 2">
-<img src="http://imageshack.com/a/img924/3963/9NAv8g.png" style="width: 1000px;" />
+    <div class="text-align: center; Poster 2">
+<img src="http://imageshack.com/a/img924/3963/9NAv8g.png" style="width: 2000px;" />
 </div>
     <p></p>
     <h4><p> A list of events and some statistics:</p>   
