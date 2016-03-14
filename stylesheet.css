@@ -43,7 +43,7 @@ body a {
 /*Titre du site*/
 h1 {
 	margin: 0;
-	font-size: 10em;
+	font-size: 13em;
 	position: relative;
 	top: .2em;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
@@ -51,7 +51,7 @@ h1 {
 
 /*Sous-titre du site*/
 h2 {
-	font-size: 6em;
+	font-size: 9em;
 	color: white;
 	text-align: center;
 	background-color: #1A3747;
