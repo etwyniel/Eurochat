@@ -70,7 +70,7 @@
 </div>
     <p></p>
     <div class=text-align: center; "Poster 2">
-<img src="http://imageshack.com/a/img921/3963/9NAv8g.png" style="width: 2000px;" />
+<img src="http://imageshack.com/a/img921/3936/JrHqMI.png" style="width: 2000px;" />
 </div>
     <p></p>
     <h4><p><center> A list of events and some statistics:</center></p>   
