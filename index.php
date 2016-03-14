@@ -65,21 +65,27 @@
                 <p class="wrap"> NEWS : On the fifth of January 2016, President Barack Obama made a heartmoving speech about the dangers that weapons represents in our country. He even cried as he spoke about these innocent victims</p>
                 <p>Here, you can see two of the last posters of our new sensibilization campaign <br />
                 </p>
-    <div class="text-align: center; Poster 1">
+    <div class=text-align: center; "Poster 1">
 <img src="http://imageshack.com/a/img921/3936/JrHqMI.png" style="width: 2000px;" />
 </div>
     <p></p>
-    <div class="text-align: center; Poster 2">
+    <div class=text-align: center; "Poster 2">
 <img src="http://imageshack.com/a/img924/3963/9NAv8g.png" style="width: 2000px;" />
 </div>
     <p></p>
     <h4><p> A list of events and some statistics:</p>   
     <p> University of texas : happened in August 1966, 14 people have been killed and 32 injured. The felon’s name is Whitman and he was a student at this university. Firearms implicated : YES <br />
-    <img src="http://www2.luventicus.org/cartes/etatsunis/texas.gif" alt="Map of texas" /></p>
+    <div class= text-align: center; "Texas">
+<img src="http://www2.luventicus.org/cartes/etatsunis/texas.gif" style="width: 1000px;" />
+</div></p>
     <p> Cleveland elementary school : January 29, 1979, in San Diego, California. 2 people killed and 9 injured. Perpetrated by a 16 years old female student. Firearms implicated : YES <br />
-    <img src="http://www2.luventicus.org/cartes/etatsunis/californie.gif" alt="Map of california" /></p>
+    <div class= text-align: center; "California">
+<img src="http://www2.luventicus.org/cartes/etatsunis/californie.gif" style="width: 1000px;" />
+</div></p>
     <p> Virginia tech institute : April 16, 2007. 32 peole were found dead and 23 were injured. The shooter was identified as a senior at Virginia Tech, 23-year-old Seung-Hui Cho. Firearms implicated : YES <br />
-    <img src="http://www2.luventicus.org/cartes/etatsunis/virginie.gif" alt="Map of virginia" /></p>
+    <div class= text-align: center; "Virginia">
+<img src="http://www2.luventicus.org/cartes/etatsunis/virginie.gif" style="width: 1000px;" />
+</div></p>
     </h4>
                 <script type="text/javascript">
             	window.onload = function () {
