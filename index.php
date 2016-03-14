@@ -55,12 +55,14 @@
 				//Si l'utilisateur est connecté, on affiche son nom après 'Welcome'
 				echo $_SESSION['username'];
 			?>!</h3><br>
-			<p class="wrap">Welcome to this website.<br>Here, you can have a closer look at the current situation, sign petitions and donate to support families and our cause.</p>
-            <p> To use properly this website, please login, or if you do not have any account, please register. 
+			<p class="wrap">Welcome to this website.<br>Here, you can have a closer look at the current situation, sign petitions and donate to support families and our cause.To use properly this website, please login, or if you do not have any account, please register. 
                 As we are here to find solutions, and not create conflicts, we will not tolerate bad behaviors, insults, and unrelevant discussions.</p>
+            <p> To use properly this website, please login, or if you do not have any account, please register. 
+               </p>
                 <p></p>
                 <p>NEWS : Jamie Gilt, a young 31 years old pro-gun activist, was shot 5 days ago by her 4 years old son, who used her legally purchased gun, which he was easily able to catch. Her life is not in danger anymore.</p>
                 <p></p>
+                <p> NEWS : On the fifth of January 2016, President Barack Obama made a heartmoving speech about the dangers that weapons represents in our country. He even cried as he spoke about these innocent victims</p>
                 <p>Here, you can see two of the last posters of our new sensibilization campaign <br />
                 </p>
     <img src="http://imageshack.com/a/img924/3963/9NAv8g.png" alt="Poster 1" /></p>
