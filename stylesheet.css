@@ -42,6 +42,7 @@ body a {
 
 /*Titre du site*/
 h1 {
+	color: #CC0033;
 	margin: 0;
 	font-size: 13em;
 	position: relative;
