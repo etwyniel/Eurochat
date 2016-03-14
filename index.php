@@ -55,7 +55,7 @@
 				//Si l'utilisateur est connecté, on affiche son nom après 'Welcome'
 				echo $_SESSION['username'];
 			?>!</h3><br>
-			<p class="wrap">Welcome to this website.<br>Here, you can have a closer look at the current situation, sign petitions and donate to support families and our cause.To use properly this website, please login, or if you do not have any account, please register. 
+			<p class="wrap">Welcome to this website.<br>Here, you can have a closer look at the current situation, sign petitions and donate to support families and our cause. To properly use this website, please login, or if you do not have any account, please register. 
                 As we are here to find solutions, and not create conflicts, we will not tolerate bad behaviors, insults, and unrelevant discussions.</p>
             <p> To use properly this website, please login, or if you do not have any account, please register. 
                </p>
