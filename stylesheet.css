@@ -176,6 +176,14 @@ body p a:hover {
 	padding-right: 1em
 }
 
+.wrap2 {
+	background-color: #CC0033;
+	border: 3px solid #CC0033;
+	border-radius: 2px;
+	margin-top: 0;
+	padding-left: 1em;
+	padding-right: 1em
+}
 /*Style pour les formulaires de connexion et de création de comptes*/
 form {
     width:  10em
