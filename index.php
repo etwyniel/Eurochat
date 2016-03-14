@@ -63,7 +63,7 @@
                 <p class="wrap">NEWS : Jamie Gilt, a young 31 years old pro-gun activist, was shot 5 days ago by her 4 years old son, who used her legally purchased gun, which he was easily able to catch. Her life is not in danger anymore.</p>
                 <p></p>
                 <p class="wrap"> NEWS : On the fifth of January 2016, President Barack Obama made a heartmoving speech about the dangers that weapons represents in our country. He even cried as he spoke about these innocent victims</p>
-                <p>Here, you can see two of the last posters of our new sensibilization campaign <br />
+                <p><center>Here, you can see two of the last posters of our new sensibilization campaign </center><br />
                 </p>
     <div class=text-align: center; "Poster 1">
 <img src="http://imageshack.com/a/img921/3936/JrHqMI.png" style="width: 2000px;" />
@@ -73,7 +73,7 @@
 <img src="http://imageshack.com/a/img924/3963/9NAv8g.png" style="width: 2000px;" />
 </div>
     <p></p>
-    <h4><p> A list of events and some statistics:</p>   
+    <h4><p><center> A list of events and some statistics:</center></p>   
     <p> University of texas : happened in August 1966, 14 people have been killed and 32 injured. The felon’s name is Whitman and he was a student at this university. Firearms implicated : YES <br />
     <div class= text-align: center; "Texas">
 <img src="http://www2.luventicus.org/cartes/etatsunis/texas.gif" style="width: 1000px;" />
