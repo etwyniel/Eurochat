@@ -60,9 +60,9 @@
             <p> To use properly this website, please login, or if you do not have any account, please register. 
                </p>
                 <p></p>
-                <p>NEWS : Jamie Gilt, a young 31 years old pro-gun activist, was shot 5 days ago by her 4 years old son, who used her legally purchased gun, which he was easily able to catch. Her life is not in danger anymore.</p>
+                <p class="wrap">NEWS : Jamie Gilt, a young 31 years old pro-gun activist, was shot 5 days ago by her 4 years old son, who used her legally purchased gun, which he was easily able to catch. Her life is not in danger anymore.</p>
                 <p></p>
-                <p> NEWS : On the fifth of January 2016, President Barack Obama made a heartmoving speech about the dangers that weapons represents in our country. He even cried as he spoke about these innocent victims</p>
+                <p class="wrap"> NEWS : On the fifth of January 2016, President Barack Obama made a heartmoving speech about the dangers that weapons represents in our country. He even cried as he spoke about these innocent victims</p>
                 <p>Here, you can see two of the last posters of our new sensibilization campaign <br />
                 </p>
     <img src="http://imageshack.com/a/img924/3963/9NAv8g.png" alt="Poster 1" /></p>
