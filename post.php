@@ -4,7 +4,7 @@
     $message = htmlspecialchars($_POST['message'], ENT_QUOTES);
     
     //On crée une connexion à la base de données MySQL distante
-    $mysqli = new mysqli($_ENV["DB_SERVER"], $_ENV["DB_user"], $_ENV["DB_PASSWORD"], $_ENV["DB_USER"]);
+    $mysqli = new mysqli($_ENV["DB_SERVER"], $_ENV["DB_USER"], $_ENV["DB_PASSWORD"], $_ENV["DB_USER"]);
     //On crée un requête pour ajouter un message sur la base de données
     $query = "INSERT INTO message (username, message) VALUES ('$username', '$message')";
 
