@@ -23,7 +23,7 @@
  } else {
      echo "<div id='log'><a href='register'>Register</a> or <a href='login'>Log in</a></div>";
  }?>
-			<h2>An initiative to prevent school shootings at every scale
+			<h2>An initiative to prevent school shootings at every scale</h2>
 		<!-- Liens vers les différentes pages du site -->
 		<p id="links">
 			<a href="..">Home</a>&emsp; | &emsp;
