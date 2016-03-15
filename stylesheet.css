@@ -18,7 +18,7 @@ body {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
-  src: local('Raleway'), url(https://cdn.monsieur-des-drapeaux.com/media/catalog/product/detail/grand-drapeau-usa-2856.jpg) format('jpg');
+  src: local('Raleway'), url(https://fonts.gstatic.com/s/raleway/v9/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
 }
 
 /*Liens sont en noir et sans soulignement*/
