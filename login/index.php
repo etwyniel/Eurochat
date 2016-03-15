@@ -12,21 +12,21 @@
 	</head>
 	<body>
 		<div  id="header"><a href="..">
-			<h1>EuroChat</h1>
+			<h1>Stand up against school shootings</h1>
             <?php if ($_SESSION['logged_in']) {
      echo "<div id='log'><a href='../logout.php'>Log out</a></div>";
  } else {
      echo "<div id='log'><a href='../register'>Register</a> or <a href='../login'>Log in</a></div>";
  }?>
-			<h2>An efficient way of communicating between penfriends</h2>
+			<h2>An initiative to prevent school shootings at every scale</h2>
 		</a></div>
 		<p id="links">
 			<a href="..">Home</a>&emsp; | &emsp;
-			<a href="../lobby?lobby=1"> FRA - ENG </a> &emsp;| &emsp;
-			<a href="../lobby?lobby=2"> FRA - DEU </a>&emsp; |&emsp; 
-			<a href="../lobby?lobby=3"> FRA - SPA </a>&emsp; | &emsp;
-			<a href="../lobby?lobby=4"> FRA - USA </a> &emsp;| &emsp;
-			<a href="../about"> Info</a>
+			<a href="../lobby?lobby=1"> Education </a> &emsp;| &emsp;
+			<a href="../lobby?lobby=2"> Restriction bills </a>&emsp; |&emsp; 
+			<a href="../lobby?lobby=3"> Being responsible </a>&emsp; | &emsp;
+			<a href="../lobby?lobby=4"> Bonds for guns </a> &emsp;| &emsp;
+			<a href="../about"> Contact</a>
 		</p>
 		<br>
 		<div id="main">
