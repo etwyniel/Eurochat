@@ -7,12 +7,12 @@
     //On crée une connection à la base de donnée contenant les identifiants
     $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
-    $server = $url["host"];
-    $username = $url["user"];
-    $password = $url["pass"];
+    $db_server = $url["host"];
+    $db_username = $url["user"];
+    $db_password = $url["pass"];
     $db = substr($url["path"], 1);
 
-    $mysqli = new mysqli($server, $username, $password, $db);
+    $mysqli = new mysqli($db_server, $db_username, $db_password, $db);
     
     //On fait une requête avec le nom d'utilisateur
     $check_username = "SELECT * FROM credentials WHERE username = '$username'";
