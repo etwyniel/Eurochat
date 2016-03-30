@@ -5,12 +5,12 @@ $email = htmlspecialchars($_POST['email'], ENT_QUOTES);
 
 $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
-$server = $url["host"];
-$username = $url["user"];
-$password = $url["pass"];
+$db_server = $url["host"];
+$db_username = $url["user"];
+$db_password = $url["pass"];
 $db = substr($url["path"], 1);
 
-$mysqli = new mysqli($server, $username, $password, $db);
+$mysqli = new mysqli($db_server, $db_username, $db_password, $db);
 
 /*if ($mysqli->connect_errno > 0) {
     header('Location: ../newDB');
