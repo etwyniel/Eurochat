@@ -3,7 +3,14 @@ $username = htmlspecialchars($_POST['username'], ENT_QUOTES);
 $password = $_POST['password'];
 $email = htmlspecialchars($_POST['email'], ENT_QUOTES);
 
-$mysqli = new mysqli($_ENV['DB_SERVER'], $_ENV['DB_USER'], $_ENV['DB_PASSWORD'], $_ENV['DB_USER']);
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+$server = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$db = substr($url["path"], 1);
+
+$mysqli = new mysqli($server, $username, $password, $db);
 
 /*if ($mysqli->connect_errno > 0) {
     header('Location: ../newDB');
