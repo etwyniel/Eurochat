@@ -5,7 +5,14 @@
     $password = $_POST['password'];
     
     //On crée une connection à la base de donnée contenant les identifiants
-    $mysqli = new mysqli($_ENV['DB_SERVER'], $_ENV['DB_USER'], $_ENV['DB_PASSWORD'], $_ENV['DB_USER']);
+    $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+    $server = $url["host"];
+    $username = $url["user"];
+    $password = $url["pass"];
+    $db = substr($url["path"], 1);
+
+    $mysqli = new mysqli($server, $username, $password, $db);
     
     //On fait une requête avec le nom d'utilisateur
     $check_username = "SELECT * FROM credentials WHERE username = '$username'";
