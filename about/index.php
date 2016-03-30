@@ -64,7 +64,14 @@
 				<li>Alban Steff</li>
 			</ul>
 			<?php 
-				$mysqli = new mysqli($_ENV['DB_SERVER'], $_ENV['DB_USER'], $_ENV['DB_PASSWORD'], $_ENV['DB_USER']);
+				$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+                		$server = $url["host"];
+                		$username = $url["user"];
+                		$password = $url["pass"];
+                		$db = substr($url["path"], 1);
+
+                		$mysqli = new mysqli($server, $username, $password, $db);
 				$query = 'SELECT * FROM credentials';
 				
 				$r = mysqli_query($mysqli, $query);
